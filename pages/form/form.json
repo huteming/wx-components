@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "app-header": "../../components/header/header",
+    "app-content": "../../components/content/content",
+    "app-form": "../../components/form/form",
+    "app-form-item": "../../components/form-item/form-item",
+    "app-input": "../../components/input/input",
+    "app-button": "../../components/button/button"
+  }
+}

@@ -1,0 +1,1 @@
+<app-datepicker mode="time" name="datepicker" value="{{ value }}" start="{{ start }}" end="{{ end }}" catch:change="handleChange" />

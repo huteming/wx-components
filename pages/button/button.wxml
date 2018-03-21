@@ -1,0 +1,8 @@
+<app-button catch:click="handleClick"> normal </app-button>
+<app-button to="../../pages/login/login"> to </app-button>
+<app-button size="mini"> mini </app-button>
+<app-button type="primary"> primary </app-button>
+<navigator>
+  <app-button type="primary" plain> plain </app-button>
+</navigator>
+<app-button type="primary" disabled> disabled </app-button>

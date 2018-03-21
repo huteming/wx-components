@@ -1,0 +1,12 @@
+<app-slider height="200">
+  <app-slider-item
+    wx:for="{{ options }}"
+    wx:key="value"
+    catch:destroy="handleDestroy"
+    catch:star="handleStar"
+    layout="{{ [{ label: '关注', value: item.value, event: 'star' }, { label: '删除', value: item.value, event: 'destroy' }] }}">
+    <app-cell label="label" value="value" />
+  </app-slider-item>
+</app-slider> 
+
+<view>结尾</view>

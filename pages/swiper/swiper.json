@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "app-navbar-header": "../../components/navbar-header/navbar-header"
+  }
+}

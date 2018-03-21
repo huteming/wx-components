@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "app-footer": "../../components/footer/footer"
+  }
+}

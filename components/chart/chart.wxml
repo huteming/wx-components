@@ -1,0 +1,8 @@
+ <canvas
+  canvas-id="{{ id }}"
+  style="width: {{ realWidth }}px; height: {{ realHeight }}px;"
+  bindtouchstart="handleStart"
+  bindtouchmove="handleMove"
+  bindtouchend="handleEnd"
+  disable-scroll="{{ false }}">
+</canvas>

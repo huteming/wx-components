@@ -1,0 +1,8 @@
+<app-cell icon="{{ icon }}" catch:change="handleChange">
+  <view slot="label" style="width: {{ labelWidth }}px;">
+    <text class="c-form-item-required" wx:if="{{ required }}"> * </text>
+    <text>{{ label }}</text>
+  </view>
+
+  <slot />
+</app-cell>

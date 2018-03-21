@@ -1,0 +1,3 @@
+<app-content catch:formItemChange="handleChange">
+  <slot />
+</app-content>

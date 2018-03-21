@@ -1,0 +1,25 @@
+.weui-loadmore {
+  width: 65%;
+  margin: 1em auto;
+  line-height: 1.6em;
+  font-size: 14px;
+  text-align: center;
+}
+
+.weui-loadmore_line {
+  border-top: 1px solid #e5e5e5;
+  margin-top: 2.5em;
+}
+
+.weui-loadmore__tips {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.weui-loadmore__tips_in-line {
+  position: relative;
+  top: -.9em;
+  padding: 0 0.55em;
+  background-color: #f5f5f9;
+  color: #999;
+}

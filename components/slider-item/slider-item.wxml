@@ -1,0 +1,19 @@
+<view class="c-slider">
+  <view
+    animation="{{ animation }}"
+    bindtouchstart="onTouchStart"
+    bindtouchmove="onTouchMove"
+    bindtouchend="onTouchEnd">
+    <slot />
+  </view>
+
+  <view class="c-slider-menu" animation="{{ animationMenu }}">
+
+    <view
+      class="c-slider-menu-item {{ index === layout.length - 1 ? 'c-slider-space': '' }} c-slider-menu-item-{{ index }}"
+      wx:for="{{ layout }}"
+      wx:key="{{ index }}">
+      <text bindtap="handleClick" data-item="{{ item }}"> {{ item.label }} </text>
+    </view>
+  </view>
+</view>

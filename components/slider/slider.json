@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "app-content": "../content/content",
+    "app-footer": "../footer/footer"
+  }
+}

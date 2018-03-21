@@ -1,0 +1,6 @@
+<app-header title="title" subtitle="subtitle" catch:clickTitle="handleClickTitle" catch:clickSubtitle="handleClickSubtitle" />
+
+<app-header>
+  <view slot="title">slot-title</view>
+  <view>slot-subtitle</view>
+</app-header>

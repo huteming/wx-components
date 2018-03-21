@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "app-checkbox": "../../components/checkbox/checkbox"
+  }
+}

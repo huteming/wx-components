@@ -1,0 +1,11 @@
+<view class="c-navbar-header">
+  <block wx:for="{{ tabs }}" wx:key="*this">
+    <view
+      class="c-navbar-header__item {{ current === item ? 'c-navbar-header__item-active' : '' }}"
+      data-name="{{ item }}"
+      bindtap="handleChange">
+      <view class="c-navbar-header__title">{{ item }}</view>
+    </view>
+  </block>
+  <view class="c-navbar-header__slider" style="width: {{ averageWidth }}px;" animation="{{ animation }}"></view>
+</view>

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "app-cell": "../../components/cell/cell",
+    "app-input": "../../components/input/input",
+    "app-textarea": "../../components/textarea/textarea"
+  }
+}

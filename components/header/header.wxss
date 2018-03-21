@@ -1,0 +1,20 @@
+.c-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  color: #999;
+  font-size: 14px;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 2px;
+  /* background-color: #F5F5F9; */
+}
+
+.c-header-title {
+  padding: 10px 15px 4px;
+}
+
+.c-header-subtitle {
+  padding: 10px 15px 4px;
+  text-align: right;
+}

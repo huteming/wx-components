@@ -1,0 +1,7 @@
+<view class="page">
+  <app-header title="基础组件" />
+
+  <app-header title="表单" />
+
+  <app-header title="操作反馈" />
+</view>

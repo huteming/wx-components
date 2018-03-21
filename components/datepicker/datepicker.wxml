@@ -1,0 +1,10 @@
+<wxs module="filter" src="../../app.wxs" />
+
+<picker
+  mode="{{ mode }}"
+  value="{{ value }}"
+  start="{{ start }}"
+  end="{{ end }}"
+  bindchange="handleChange">
+  <view class="c-datepicker-select">{{ filter.empty(value) }}</view>
+</picker>

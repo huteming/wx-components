@@ -1,0 +1,222 @@
+@import './iconfont.wxss';
+
+/* 方向  */
+.iconfont-right:after {
+  font-family: 'iconfont';
+  font-weight: 500;
+  font-style: normal;
+  content: '\e6a3';
+}
+
+.iconfont-left:after {
+  font-family: 'iconfont';
+  font-weight: 500;
+  font-style: normal;
+  content: '\e679';
+}
+
+/* 状态  */
+.iconfont-success:after {
+  font-family: 'iconfont';
+  font-weight: 500;
+  font-style: normal;
+  content: '\e673';
+}
+
+.iconfont-error:after {
+  font-family: 'iconfont';
+  font-weight: 500;
+  font-style: normal;
+  content: '\e67a';
+}
+
+.iconfont-loading:after {
+  font-family: 'iconfont';
+  font-weight: 500;
+  font-style: normal;
+  content: '\e605';
+}
+
+.iconfont-warning:after {
+  font-family: 'iconfont';
+  font-weight: 500;
+  font-style: normal;
+  content: '\e609';
+}
+
+/* 通用  */
+.iconfont-config:after {
+  font-family: 'iconfont';
+  font-weight: 500;
+  font-style: normal;
+  content: '\e68a';
+}
+
+.iconfont-user:after {
+  font-family: 'iconfont';
+  font-weight: 500;
+  font-style: normal;
+  content: '\e7be';
+}
+
+.iconfont-users:after {
+  font-family: 'iconfont';
+  font-weight: 500;
+  font-style: normal;
+  content: '\e611';
+}
+
+.iconfont-password:after {
+  font-family: 'iconfont';
+  font-weight: 500;
+  font-style: normal;
+  content: '\e6c5';
+}
+
+.iconfont-add:after {
+  font-family: 'iconfont';
+  font-weight: 500;
+  font-style: normal;
+  content: '\e868';
+}
+
+.iconfont-edit:after {
+  font-family: 'iconfont';
+  font-weight: 500;
+  font-style: normal;
+  content: '\e61c';
+}
+
+.iconfont-search:after {
+  font-family: 'iconfont';
+  font-weight: 500;
+  font-style: normal;
+  content: '\e638';
+}
+
+.iconfont-camera:after {
+  font-family: 'iconfont';
+  font-weight: 500;
+  font-style: normal;
+  content: '\e815';
+}
+
+.iconfont-date:after {
+  font-family: 'iconfont';
+  font-weight: 500;
+  font-style: normal;
+  content: '\e66b';
+}
+
+.iconfont-time:after {
+  font-family: 'iconfont';
+  font-weight: 500;
+  font-style: normal;
+  content: '\e623';
+}
+
+.iconfont-book:after {
+  font-family: 'iconfont';
+  font-weight: 500;
+  font-style: normal;
+  content: '\e649';
+}
+
+.iconfont-list:after {
+  font-family: 'iconfont';
+  font-weight: 500;
+  font-style: normal;
+  content: '\e600';
+}
+
+/* 项目内特殊图标  */
+.iconfont-logo:after {
+  font-family: 'iconfont';
+  font-weight: 500;
+  font-style: normal;
+  content: '\e789';
+}
+
+.iconfont-project:after {
+  font-family: 'iconfont';
+  font-weight: 500;
+  font-style: normal;
+  content: '\e6db';
+}
+
+.iconfont-level:after {
+  font-family: 'iconfont';
+  font-weight: 500;
+  font-style: normal;
+  content: '\e619';
+}
+
+.iconfont-voltage:after {
+  font-family: 'iconfont';
+  font-weight: 500;
+  font-style: normal;
+  content: '\e60b';
+}
+
+.iconfont-electricity:after {
+  font-family: 'iconfont';
+  font-weight: 500;
+  font-style: normal;
+  content: '\e60a';
+}
+
+.iconfont-charge:after {
+  font-family: 'iconfont';
+  font-weight: 500;
+  font-style: normal;
+  content: '\e63c';
+}
+
+.iconfont-discharge:after {
+  font-family: 'iconfont';
+  font-weight: 500;
+  font-style: normal;
+  content: '\e61a';
+}
+
+.iconfont-remain:after {
+  font-family: 'iconfont';
+  font-weight: 500;
+  font-style: normal;
+  content: '\e6e9';
+}
+
+.iconfont-temperature:after {
+  font-family: 'iconfont';
+  font-weight: 500;
+  font-style: normal;
+  content: '\e64b';
+}
+
+.iconfont-lamp:after {
+  font-family: 'iconfont';
+  font-weight: 500;
+  font-style: normal;
+  content: '\e67b';
+}
+
+/*  颜色  */
+.iconfont-color-primary {
+  color: #1296db;
+}
+
+.iconfont-color-warning {
+  color: #ff9500;
+}
+
+.iconfont-color-danger {
+  color: #e64340;
+}
+
+.iconfont-color-disabled {
+  color: #9a9a9a;
+}
+
+.iconfont-color-black {
+  color: #000;
+}

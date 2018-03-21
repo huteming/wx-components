@@ -1,0 +1,3 @@
+<app-content>
+  slot-content
+</app-content>

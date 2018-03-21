@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "app-slider": "../../components/slider/slider",
+    "app-slider-item": "../../components/slider-item/slider-item",
+    "app-cell": "../../components/cell/cell"
+  }
+}

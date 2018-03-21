@@ -1,0 +1,7 @@
+.c-button {
+  margin: 0 15px; 
+}
+
+.c-button-space {
+  margin-top: 15px;
+}

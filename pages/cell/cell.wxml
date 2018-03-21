@@ -1,0 +1,19 @@
+<app-cell icon="user" label="normal" value="value" to="../icon/icon" is-link />
+
+<app-cell label="error" value="value" error />
+
+<app-cell>
+  <view slot="icon" style="height: 45px;line-height: 45px;"> icon </view>
+
+  <view slot="label"> slot-label </view>
+
+  <view> slot-value </view>
+</app-cell>
+
+<app-cell icon="user" label="test input">
+  <app-input />
+</app-cell>
+
+<app-cell icon="user" label="test textarea">
+  <app-textarea />
+</app-cell>

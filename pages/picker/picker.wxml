@@ -1,0 +1,3 @@
+<app-cell label="当前选择">
+  <app-picker name="picker" value="{{ value }}" options="{{ options }}" catch:change="handleChange" />
+</app-cell>

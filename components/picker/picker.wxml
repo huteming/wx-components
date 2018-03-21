@@ -1,0 +1,11 @@
+<wxs module="filter" src="../../app.wxs" />
+
+<picker
+  id="picker"
+  bindchange="handleChange"
+  value="{{ currentIndex }}"
+  range="{{ options }}"
+  range-key="{{ 'label' }}"
+  class="picker-select">
+  <view class="picker-select-text picker-select-nowarp">{{ filter.empty(options[currentIndex].label) }}</view>
+</picker>

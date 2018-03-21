@@ -1,0 +1,9 @@
+<button
+  class="c-button {{ space ? 'c-button-space' : '' }}"
+  size="{{ size }}"
+  type="{{ type }}"
+  plain="{{ plain }}"
+  disabled="{{ disabled }}"
+  bindtap="handleClick">
+  <slot />
+</button>

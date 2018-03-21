@@ -1,0 +1,35 @@
+.c-slider {
+  position: relative;
+}
+
+.c-slider-menu {
+   display: -webkit-box;
+  display: -webkit-flex;
+  display: flex; 
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  color: #fff;
+}
+
+.c-slider-menu-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170rpx;
+}
+
+.c-slider-space {
+  padding-right: 100px;
+}
+
+.c-slider-menu-item-0 {
+  background-color: #e64340;
+}
+
+.c-slider-menu-item-1 {
+  background-color: rgb(200, 199, 205);
+}

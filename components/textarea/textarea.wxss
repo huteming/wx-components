@@ -1,0 +1,6 @@
+.c-textarea {
+  padding: 10px 0; 
+  width: 100%;
+  text-align: left;
+  color: #000;
+}

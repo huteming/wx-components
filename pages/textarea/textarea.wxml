@@ -1,0 +1,4 @@
+<app-textarea name="textarea" value="{{ value }}" catch:change="handleChange" catch:focus="handleFocus" catch:blur="handleBlur" />
+<app-textarea placeholder="rows" rows="8" />
+<app-textarea placeholder="disabled" disabled />
+<app-textarea placeholder="focus" focus catch:focus="handleFocus" />

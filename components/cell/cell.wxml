@@ -1,0 +1,39 @@
+<!--
+  备注：
+  1、组件高度为 45px
+  2、icon如果自定义，建议高度为 25px
+-->
+<view
+  class="c-cell {{ error ? 'c-cell_warn' : '' }}"
+  hover-class="{{ isLink && to ? 'c-cell_active' : '' }}"
+  bindtap="handleClick">
+  <view class="c-cell-item c-cell__hd">
+    <app-icon wx:if="{{ icon }}" icon="{{ icon }}" color="{{ error ? 'danger' : iconColor }}" />
+
+    <block wx:else>
+      <slot name="icon" />
+    </block>
+  </view>
+
+  <view class="c-cell-item c-cell__bd" style="{{ styleLabel }}">
+    <text wx:if="{{ label }}">{{ label }}</text>
+
+    <block wx:else>
+      <slot name="label" />
+    </block>
+  </view>
+
+  <view class="c-cell-item c-cell__ft">
+    <text wx:if="{{ value }}" class="c-cell__ft_nowarp">{{ value }}</text>
+
+    <view style="width: 100%; text-align: right;" wx:else>
+      <slot />
+    </view>
+  </view>
+
+  <view class="c-cell-item c-cell__tip" wx:if="{{ error }}">
+    <icon type="warn" size="23" color="#E64340"></icon>
+  </view>
+
+  <view class="c-cell__link {{ isLink ? 'c-cell__link-active' : '' }}" wx:if="{{ isLink }}"></view>
+</view>

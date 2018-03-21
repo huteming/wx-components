@@ -1,0 +1,10 @@
+<app-form
+  model="{{ model }}"
+  label-width="170"
+  catch:change="handleChange">
+  <app-form-item name="input" icon="user" label="input" rules="{{ rules }}">
+    <app-input value="{{ model.input }}" />
+  </app-form-item>
+</app-form>
+
+<app-button type="primary" catch:click="handleSubmit" disabled="{{ disabled }}"> 保存 </app-button>

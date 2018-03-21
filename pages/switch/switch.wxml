@@ -1,0 +1,1 @@
+<app-switch name="switch" value="{{ value }}" catch:change="handleChange" />

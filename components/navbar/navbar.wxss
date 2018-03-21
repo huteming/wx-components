@@ -1,0 +1,12 @@
+.c-navbar {
+  position: relative;
+  height: 100%;
+}
+
+.c-navbar-content {
+  box-sizing: border-box;
+  height: 100%;
+  /* padding-top: 5px; */
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}

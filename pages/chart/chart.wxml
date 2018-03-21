@@ -1,0 +1,8 @@
+<app-chart height="{{ asyncHeight }}" />
+<app-chart type="pie" height="{{ asyncHeight }}" /> 
+
+<app-chart height="200" />
+<app-chart type="pie" height="200" />
+
+<app-chart />
+<app-chart type="pie" /> 

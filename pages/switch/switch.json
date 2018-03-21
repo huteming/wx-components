@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "app-switch": "../../components/switch/switch"
+  }
+}

@@ -1,0 +1,38 @@
+function empty(value) {
+  if (!value && value !== 0) {
+    return '---'
+  }
+  return value
+}
+
+function roleName(roleName) {
+  switch (roleName) {
+    case 'OWNER':
+      return '拥有者'
+    case 'MANAGER':
+      return '协作管理员'
+    case 'MEMBER':
+      return '一般成员'
+    case 'GUEST':
+      return '只读成员'
+    default:
+      return '---'
+  }
+}
+
+function batteryType (type) {
+  switch (type) {
+    case '1':
+      return '磷酸铁锂'
+    case '2':
+      return '三元锂'
+    case '3':
+      return '铅酸'
+  }
+}
+
+module.exports = {
+  empty: empty,
+  roleName: roleName,
+  batteryType: batteryType,
+}

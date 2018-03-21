@@ -1,0 +1,17 @@
+<view class="checkbox-cells">
+  <checkbox-group bindchange="handleChange" wx:if="{{ checkboxItems.length }}">
+    <label
+      class="checkbox-cell checkbox-check__label"
+      wx:for="{{ checkboxItems }}"
+      wx:key="value">
+      <checkbox class="checkbox-check" value="{{ item.value }}" checked="{{ item.checked }}"/>
+
+      <view class="checkbox-cell__hd">
+        <icon class="checkbox_circle" type="circle" size="23" wx:if="{{ !item.checked }}"></icon>
+        <icon class="checkbox_success" type="success" size="23" wx:if="{{ item.checked }}"></icon>
+      </view>
+      <view class="checkbox-cell__bd">{{ item.label }}</view>
+    </label>
+  </checkbox-group>
+  <app-footer wx:else> 无数据 </app-footer>
+</view>

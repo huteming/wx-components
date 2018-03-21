@@ -1,0 +1,7 @@
+<app-panel icon="{{ icon }}" title="{{ title }}" subtitle="{{ subtitle }}" />
+
+<app-panel>
+  <view slot="icon"> {{ icon }} </view>
+
+  <view>{{ title }} - {{ subtitle }}</view>
+</app-panel>

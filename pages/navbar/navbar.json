@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "app-navbar": "../../components/navbar/navbar",
+    "app-navbar-item": "../../components/navbar-item/navbar-item"
+  }
+}

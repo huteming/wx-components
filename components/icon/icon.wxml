@@ -1,0 +1,3 @@
+<view class="{{ classColor }}" style="display: inline-block;">
+  <text class="{{ classIcon }}"></text>
+</view>

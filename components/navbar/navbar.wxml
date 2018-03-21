@@ -1,0 +1,7 @@
+<view class="c-navbar">
+  <app-navbar-header tabs="{{ tabs }}" active-name="{{ activeName }}" catch:change="handleChange" />
+
+  <view class="c-navbar-content">
+    <slot />
+  </view>
+</view>

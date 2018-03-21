@@ -1,0 +1,16 @@
+<!--
+  备注：
+  1、组件最小高度为 22px
+  2、icon如果自定义，建议高度为 14px
+-->
+<view class="c-header">
+  <view class="c-header-title" bindtap="handleTitleClick">
+    <text wx:if="{{ title }}">{{ title }}</text>
+    <slot name="title" />
+  </view>
+
+  <view class="c-header-subtitle" bindtap="handleSubtitleClick">
+    <text wx:if="{{ subtitle }}">{{ subtitle }}</text>
+    <slot />
+  </view>
+</view>

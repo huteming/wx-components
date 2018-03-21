@@ -1,0 +1,19 @@
+<!--
+  备注：
+  1、组件最小高度为 70px
+  2、icon如果自定义，建议高度为 50px
+-->
+<navigator url="{{ to }}" class="c-panel" hover-class="c-panel_active">
+  <view class="c-panel__hd">
+    <app-icon wx:if="{{ icon }}" icon="{{ icon }}" />
+    <slot wx:else name="icon" />
+  </view>
+
+  <view class="c-panel__bd">
+    <block wx:if="{{ title }}">
+      <view class="c-panel__title"> {{ title }} </view>
+      <view class="c-panel__desc"> {{ subtitle }} </view>
+    </block>
+    <slot wx:else />
+  </view>
+</navigator>

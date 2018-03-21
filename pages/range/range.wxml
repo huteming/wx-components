@@ -1,0 +1,1 @@
+<app-range name="range" value="{{ value }}" show-value catch:change="handleChange" />

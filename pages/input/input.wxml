@@ -1,0 +1,4 @@
+<app-input name="input" value="{{ value }}" catch:change="handleChange" catch:focus="handleFocus" catch:blur="handleBlur" />
+<app-input placeholder="password" password />
+<app-input placeholder="disabled" disabled />
+<app-input placeholder="focus" focus catch:focus="handleFocus" />

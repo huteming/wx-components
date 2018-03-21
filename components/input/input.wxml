@@ -1,0 +1,12 @@
+<input
+  class="c-input"
+  placeholder-class="c-input-placeholder"
+  value="{{ value }}"
+  type="{{ type }}"
+  password="{{ password }}"
+  placeholder="{{ placeholder }}"
+  disabled="{{ disabled }}"
+  focus="{{ focus }}"
+  bindinput="handleTyping"
+  bindfocus="handleFocus"
+  bindblur="handleBlur" />

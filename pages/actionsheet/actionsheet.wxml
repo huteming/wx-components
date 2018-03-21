@@ -1,0 +1,3 @@
+<app-actionsheet options="{{ options }}" catch:click="handleClick">
+  actionsheet
+</app-actionsheet>

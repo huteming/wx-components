@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "app-picker": "../../components/picker/picker",
+    "app-cell": "../../components/cell/cell"
+  }
+}

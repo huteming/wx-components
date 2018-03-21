@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "app-chart": "../../components/chart/chart"
+  }
+}

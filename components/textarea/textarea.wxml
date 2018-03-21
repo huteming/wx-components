@@ -1,0 +1,10 @@
+<textarea
+  class="c-textarea"
+  style="height: {{ rows }}em;"
+  value="{{ value }}"
+  placeholder="{{ placeholder }}"
+  disabled="{{ disabled }}"
+  focus="{{ focus }}"
+  bindinput="handleTyping"
+  bindfocus="handleFocus"
+  bindblur="handleBlur" />

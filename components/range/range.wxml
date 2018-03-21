@@ -1,0 +1,1 @@
+<slider show-value="{{ showValue }}" value="{{ value }}" bindchange="handleChange" />

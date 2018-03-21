@@ -1,0 +1,27 @@
+.c-content {
+  position: relative;
+  /* margin-top: 1.17647059em; */
+  background-color: #fff;
+  /* line-height: 1.41176471; */
+  /* font-size: 17px; */
+}
+
+.c-content::before,
+.c-content::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  color: #d9d9d9;
+}
+
+.c-content::before {
+  top: 0;
+  border-top: 1rpx solid #d9d9d9;
+}
+
+.c-content::after {
+  bottom: 0;
+  border-bottom: 1rpx solid #d9d9d9;
+}
