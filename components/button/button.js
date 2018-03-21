@@ -1,17 +1,17 @@
-// components/button/button.js
 Component({
+
   /**
    * 组件的属性列表
    */
   properties: {
+    type: {
+      type: String,
+      value: 'success',
+    },
+
     size: {
       type: String,
       value: 'default',
-    },
-
-    type: {
-      type: String,
-      value: 'primary',
     },
 
     plain: {
@@ -24,14 +24,19 @@ Component({
       value: false,
     },
 
-    to: {
-      type: String,
-      value: '',
+    loading: {
+      type: Boolean,
+      value: false,
     },
 
     space: {
       type: Boolean,
       value: true,
+    },
+
+    to: {
+      type: String,
+      value: '',
     },
   },
 
@@ -39,7 +44,6 @@ Component({
    * 组件的初始数据
    */
   data: {
-    loading: false,
   },
 
   /**

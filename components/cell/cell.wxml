@@ -15,7 +15,7 @@
     </block>
   </view>
 
-  <view class="c-cell-item c-cell__bd" style="{{ styleLabel }}">
+  <view class="c-cell-item c-cell__bd">
     <text wx:if="{{ label }}">{{ label }}</text>
 
     <block wx:else>

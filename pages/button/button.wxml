@@ -1,8 +1,62 @@
-<app-button catch:click="handleClick"> normal </app-button>
-<app-button to="../../pages/login/login"> to </app-button>
-<app-button size="mini"> mini </app-button>
-<app-button type="primary"> primary </app-button>
-<navigator>
-  <app-button type="primary" plain> plain </app-button>
-</navigator>
-<app-button type="primary" disabled> disabled </app-button>
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">Button</view>
+    <view class="page__desc">按钮，WeUI采用小程序原生的按钮为主体，加入一些间距的样式。</view>
+  </view>
+
+  <app-button> 默认 </app-button>
+
+  <!--  普通按钮  -->
+  <app-button type="default"> default </app-button>
+  <app-button type="primary"> primary </app-button>
+  <app-button type="success"> success </app-button>
+  <app-button type="warning"> warning </app-button>
+  <app-button type="danger"> danger </app-button>
+  <app-button plain> plain </app-button>
+
+  <app-button size="mini"> mini </app-button>
+
+  <app-button space="{{ false }}"> 无间距 </app-button>
+
+  <app-button disabled> disabled </app-button>
+
+  <app-button loading="{{ loading }}" catch:click="handleClick"> 点击加载 </app-button>
+
+  <app-header title="属性" />
+  <app-content>
+    <app-cell label="type">
+      <text>default, primary, *success, warning, danger</text>
+    </app-cell>
+    
+    <app-cell label="size">
+      <view>mini, *default</view>
+    </app-cell>
+    
+    <app-cell label="plain">
+      <view>*false</view>
+    </app-cell>
+
+    <app-cell label="disabled">
+      <view>*false</view>
+    </app-cell>
+    
+    <app-cell label="loading">
+      <view>*false</view>
+    </app-cell>
+    
+    <app-cell label="space">
+      <view>*true</view>
+    </app-cell>
+    
+    <app-cell label="to">
+      <view>链接</view>
+    </app-cell>
+  </app-content>
+
+  <app-header title="事件" />
+  <app-content>
+    <app-cell label="click">
+      <view>''</view>
+    </app-cell>
+  </app-content>
+</view>

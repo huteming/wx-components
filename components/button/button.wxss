@@ -1,7 +1,30 @@
 .c-button {
-  margin: 0 15px; 
+  margin: 20px 15px; 
 }
 
-.c-button-space {
-  margin-top: 15px;
+/*  不同状态  */
+
+.c-button_default {
+  color: #000;
+  background-color: #fff;
+}
+
+.c-button_primary {
+  color: #fff;
+  background-color: #409eff;
+}
+
+.c-button_success {
+  color: #fff;
+  background-color: #1AAD19;
+}
+
+.c-button_warning {
+  color: #fff;
+  background-color: #ff9500;
+}
+
+.c-button_danger {
+  color: #fff;
+  background-color: #e64340;
 }

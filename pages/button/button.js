@@ -5,11 +5,18 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    loading: false,
   },
 
   handleClick (e) {
-    console.log(e.detail)
+    this.setData({
+      loading: true,
+    })
+    setTimeout(() => {
+      this.setData({
+        loading: false,
+      })
+    }, 3000)
   },
 
   /**

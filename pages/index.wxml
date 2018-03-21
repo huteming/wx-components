@@ -1,5 +1,8 @@
 <view class="page">
   <app-header title="基础组件" />
+  <app-content>
+    <app-cell label="Button 按钮" to="./button/button" is-link />
+  </app-content>
 
   <app-header title="表单" />
 

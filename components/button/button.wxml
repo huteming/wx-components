@@ -1,9 +1,11 @@
-<button
-  class="c-button {{ space ? 'c-button-space' : '' }}"
-  size="{{ size }}"
-  type="{{ type }}"
-  plain="{{ plain }}"
-  disabled="{{ disabled }}"
-  bindtap="handleClick">
-  <slot />
-</button>
+<view class="{{ space ? 'c-button' : '' }}">
+  <button
+    class="c-button_{{ type }}"
+    size="{{ size }}"
+    plain="{{ plain }}"
+    disabled="{{ loading || disabled }}"
+    loading="{{ loading }}"
+    bindtap="handleClick">
+    <slot />
+  </button>
+</view>
