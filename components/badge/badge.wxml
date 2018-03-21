@@ -1,0 +1,7 @@
+<view class="c-badge">
+  <slot />
+
+  <view class="c-badge_container c-badge_{{ placement }}" style="{{ styleBadge }}">
+    <text>{{ value }}</text>
+  </view>
+</view>

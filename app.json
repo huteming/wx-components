@@ -21,7 +21,8 @@
     "pages/chart/chart",
     "pages/cell/cell",
     "pages/actionsheet/actionsheet",
-    "pages/swiper/swiper"
+    "pages/swiper/swiper",
+    "pages/badge/badge"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,0 +1,40 @@
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">Badge</view>
+    <view class="page__desc">徽章</view>
+  </view>
+
+  <app-badge>
+    <text>详细信息</text>
+  </app-badge>
+
+  <app-badge value="9">
+    <text>详细信息</text>
+  </app-badge>
+
+  <app-badge value="New">
+    <text>详细信息</text>
+  </app-badge>
+
+  <app-badge value="9" placement="top-end">
+    <view class="demo size-50"></view>
+  </app-badge>
+</view>
+
+<app-header title="属性" />
+<app-content>
+  <app-cell label="placement">
+    <text>*right, top-end</text>
+  </app-cell>
+
+  <app-cell label="value">
+    <text>标签内容</text>
+  </app-cell>
+</app-content>
+
+<app-header title="slot" />
+<app-content>
+  <app-cell label="默认">
+    <text>内容</text>
+  </app-cell>
+</app-content>
