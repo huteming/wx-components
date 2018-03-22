@@ -8,6 +8,16 @@
       style="width: 100%; height: 100%;">
     </image>
   </app-panel>
+  
+  <app-panel
+    title="长长的标题，长长的标题，长长的标题，长长的标题，长长的标题，长长的标题，长长的标题，长长的标题，"
+    subtitle="测试，测试，测试，测试，测试，测试，测试，测试，测试，测试，测试，测试，测试，测试，测试，测试，">
+    <image
+      slot="icon"
+      src="http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg"
+      style="width: 100%; height: 100%;">
+    </image>
+  </app-panel>
 </app-content>
 
 <app-header title="属性" />

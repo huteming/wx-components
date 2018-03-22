@@ -5,9 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    icon: 'user',
-    title: 'title',
-    subtitle: 'subtitle',
+    // icon: 'user',
+    // title: 'title',
+    // subtitle: 'subtitle',
   },
 
   /**
@@ -15,11 +15,11 @@ Page({
    */
   onLoad: function (options) {
     setTimeout(() => {
-      this.setData({
-        icon: 'project',
-        title: 'async title',
-        subtitle: 'async subtitle'
-      })
+      // this.setData({
+      //   icon: 'project',
+      //   title: 'async title',
+      //   subtitle: 'async subtitle'
+      // })
     }, 2000)
   },
 

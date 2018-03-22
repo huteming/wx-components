@@ -6,7 +6,7 @@
   </view>
 
   <view class="c-panel__bd">
-    <view class="c-panel__title"> {{ title }} </view>
+    <view class="c-panel__title" style="{{ styleTitle }}"> {{ title }} </view>
     <view class="c-panel__desc"> {{ subtitle }} </view>
   </view>
 </navigator>

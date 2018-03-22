@@ -36,7 +36,7 @@
 }
 
 .c-panel__title {
-  max-width: 500rpx;
+  /* max-width: 500rpx; */
   font-weight: 400;
   font-size: 17px;
   width: auto;
