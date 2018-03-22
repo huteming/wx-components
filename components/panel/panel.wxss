@@ -1,13 +1,12 @@
 .c-panel {
   position: relative;
-  padding: 0 15px;
+  padding: 15px;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
   align-items: center;
-  min-height: 70px;
 }
 
 .c-panel::before {
@@ -22,12 +21,11 @@
 }
 
 .c-panel__hd {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
-  margin-right: 0.3em;
-  font-size: 50px;
-  line-height: 1.4;
+  margin-right: 15px;
+  width: 60px;
+  height: 60px;
+  font-size: 60px;
+  line-height: 60px;
   text-align: center;
 }
 
@@ -38,8 +36,9 @@
 }
 
 .c-panel__title {
+  max-width: 500rpx;
   font-weight: 400;
-  font-size: 1em;
+  font-size: 17px;
   width: auto;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -49,15 +48,12 @@
 }
 
 .c-panel__desc {
-  max-width: 500rpx;
+  max-width: 500rpx; 
   color: #999;
-  font-size: .8em;
+  font-size: 13px;
   overflow: hidden;
-  white-space: nowrap;
+  white-space: nowrap; 
   text-overflow: ellipsis;
-  /* display: -webkit-box; */
-  /* -webkit-box-orient: vertical; */
-  /* -webkit-line-clamp: 2; */
 }
 
 .c-panel_active {
