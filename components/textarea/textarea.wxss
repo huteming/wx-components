@@ -3,4 +3,5 @@
   width: 100%;
   text-align: left;
   color: #000;
+  padding-left: 4px;
 }

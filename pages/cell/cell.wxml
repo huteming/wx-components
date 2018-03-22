@@ -1,19 +1,35 @@
-<app-cell icon="user" label="normal" value="value" to="../icon/icon" is-link />
+<app-cell icon="user" label="默认" value="无底色" /> 
 
-<app-cell label="error" value="value" error />
+<app-content>
+  <app-cell label="将组件嵌套到content中" value="有底色" /> 
+  <app-cell icon="user" label="测试value过长省略" value="测试，测试，测试，测试，测试，测试，测试，测试" is-link />
 
-<app-cell>
-  <view slot="icon" style="height: 45px;line-height: 45px;"> icon </view>
+  <app-cell icon="user" label="test input" label-width="170" error>
+    <app-input />
+  </app-cell> 
 
-  <view slot="label"> slot-label </view>
+  <app-cell icon="user" label="test textarea aa" label-width="170" error>
+    <app-textarea />
+  </app-cell> 
+</app-content>
 
-  <view> slot-value </view>
-</app-cell>
 
-<app-cell icon="user" label="test input">
-  <app-input />
-</app-cell>
+<!--  文档  -->
+<app-header title="属性" />
+<app-content>
+  <app-cell label="icon" value="图标" />
+  <app-cell label="icon-color" value="图标颜色" />
+  <app-cell label="label" value="标题" />
+  <app-cell label="label-width" value="标题宽度" />
+  <app-cell label="value" value="值" />
+  <app-cell label="to" value="链接" />
+  <app-cell label="is-link" value="*false" />
+  <app-cell label="error" value="*false" />
+</app-content>
 
-<app-cell icon="user" label="test textarea">
-  <app-textarea />
-</app-cell>
+<app-header title="slot" />
+<app-content>
+  <app-cell label="默认" value="值" />
+  <app-cell label="icon" value="图标" />
+  <app-cell label="label" value="标题" />
+</app-content>

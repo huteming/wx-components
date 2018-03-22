@@ -1,34 +1,36 @@
-<app-panel icon="user" title="默认" subtitle="副标题" />
+<view class="page">
+  <app-panel icon="user" title="默认" subtitle="副标题" />
 
-<app-content>
-  <app-panel title="默认没有底色" subtitle="需要将组件嵌套到组件content中">
-    <image
-      slot="icon"
-      src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg"
-      style="width: 100%; height: 100%;">
-    </image>
-  </app-panel>
-  
-  <app-panel
-    title="长长的标题，长长的标题，长长的标题，长长的标题，长长的标题，长长的标题，长长的标题，长长的标题，"
-    subtitle="测试，测试，测试，测试，测试，测试，测试，测试，测试，测试，测试，测试，测试，测试，测试，测试，">
-    <image
-      slot="icon"
-      src="http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg"
-      style="width: 100%; height: 100%;">
-    </image>
-  </app-panel>
-</app-content>
+  <app-content>
+    <app-panel title="默认没有底色" subtitle="需要将组件嵌套到组件content中">
+      <image
+        slot="icon"
+        src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg"
+        style="width: 100%; height: 100%;">
+      </image>
+    </app-panel>
+    
+    <app-panel
+      title="长长的标题，长长的标题，长长的标题，长长的标题，长长的标题，长长的标题，长长的标题，长长的标题，"
+      subtitle="测试，测试，测试，测试，测试，测试，测试，测试，测试，测试，测试，测试，测试，测试，测试，测试，">
+      <image
+        slot="icon"
+        src="http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg"
+        style="width: 100%; height: 100%;">
+      </image>
+    </app-panel>
+  </app-content>
 
-<app-header title="属性" />
-<app-content>
-  <app-cell label="icon" value="图标" />
-  <app-cell label="title" value="标题" />
-  <app-cell label="subtitle" value="副标题" />
-  <app-cell label="to" value="链接" />
-</app-content>
+  <app-header title="属性" />
+  <app-content>
+    <app-cell label="icon" value="图标" />
+    <app-cell label="title" value="标题" />
+    <app-cell label="subtitle" value="副标题" />
+    <app-cell label="to" value="链接" />
+  </app-content>
 
-<app-header title="slot" />
-<app-content>
-  <app-cell label="icon" value="图标" />
-</app-content>
+  <app-header title="slot" />
+  <app-content>
+    <app-cell label="icon" value="图标" />
+  </app-content>
+</view>

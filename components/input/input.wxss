@@ -8,6 +8,7 @@
   display: -webkit-flex;
   display: flex;
   align-items: center;
+  padding-left: 4px;
 }
 
 .c-input-placeholder {

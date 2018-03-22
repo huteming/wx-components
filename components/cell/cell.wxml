@@ -1,21 +1,22 @@
 <!--
   备注：
-  1、组件高度为 45px
-  2、icon如果自定义，建议高度为 25px
+  宽度详细：10 + icon + [8] + label + 10 + value + error[22] + [8] + isLink + 15
 -->
 <view
-  class="c-cell {{ error ? 'c-cell_warn' : '' }}"
+  class="c-cell"
   hover-class="{{ isLink && to ? 'c-cell_active' : '' }}"
   bindtap="handleClick">
-  <view class="c-cell-item c-cell__hd">
-    <app-icon wx:if="{{ icon }}" icon="{{ icon }}" color="{{ error ? 'danger' : iconColor }}" />
+  <!--  图标  -->
+  <view class="c-cell-item c-cell__hd" id="cell-header" style="{{ styleHeader }}">
+    <app-icon wx:if="{{ icon }}" icon="{{ icon }}" />
 
-    <block wx:else>
+    <view wx:else>
       <slot name="icon" />
-    </block>
+    </view>
   </view>
 
-  <view class="c-cell-item c-cell__bd">
+  <!--  标题  -->
+  <view class="c-cell-item c-cell__bd" id="cell-body" style="{{ styleBody }}">
     <text wx:if="{{ label }}">{{ label }}</text>
 
     <block wx:else>
@@ -23,17 +24,20 @@
     </block>
   </view>
 
-  <view class="c-cell-item c-cell__ft">
-    <text wx:if="{{ value }}" class="c-cell__ft_nowarp">{{ value }}</text>
+  <!--  值  -->
+  <view class="c-cell-item c-cell__ft" id="cell-footer">
+    <text wx:if="{{ value }}" style="{{ styleValue }}">{{ value }}</text>
 
-    <view style="width: 100%; text-align: right;" wx:else>
+    <view style="width: 100%;" wx:else>
       <slot />
     </view>
   </view>
 
+  <!--  标识  -->
   <view class="c-cell-item c-cell__tip" wx:if="{{ error }}">
     <icon type="warn" size="23" color="#E64340"></icon>
   </view>
 
+  <!--  箭头  -->
   <view class="c-cell__link {{ isLink ? 'c-cell__link-active' : '' }}" wx:if="{{ isLink }}"></view>
 </view>
