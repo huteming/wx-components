@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "app-header": "../../components/header/header",
+    "app-content": "../../components/content/content",
+    "app-cell": "../../components/cell/cell",
+    "app-row": "../../components/row/row",
+    "app-col": "../../components/col/col"
+  }
+}

@@ -1,0 +1,3 @@
+<view class="c-row" style="{{ style }}">
+  <slot />
+</view>

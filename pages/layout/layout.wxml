@@ -1,0 +1,47 @@
+<app-row>
+  <app-col span="12"> <view class="placeholder">12</view> </app-col>
+  <app-col span="12"> <view class="placeholder">12</view> </app-col>
+</app-row>
+
+<app-row gutter="10">
+  <app-col span="8"> <view class="placeholder">8</view> </app-col>
+  <app-col span="8"> <view class="placeholder">8</view> </app-col>
+  <app-col span="8"> <view class="placeholder">8</view> </app-col>
+</app-row>
+
+<app-row gutter="10">
+  <app-col span="8"> <view class="placeholder">8</view> </app-col>
+  <app-col span="8" offset="8"> <view class="placeholder">8</view> </app-col>
+</app-row>
+
+<app-row gutter="10" justify="center" align="center">
+  <app-col span="8">
+    <view class="placeholder">8 <view>8</view> <view>8</view></view>
+  </app-col>
+  <app-col span="8"> <view class="placeholder">8</view> </app-col>
+</app-row>
+
+
+<!--  文档  -->
+<app-header title="row 属性" />
+<app-content>
+  <app-cell label="gutter" value="栅格间隔" />
+  <app-cell label="justify" value="justify-content 属性" />
+  <app-cell label="align" value="align-items 属性" />
+</app-content>
+
+<app-header title="col 属性" />
+<app-content>
+  <app-cell label="span*24" value="栅格占据的列数" />
+  <app-cell label="offset*0" value="栅格左侧的间隔格数" />
+</app-content>
+
+<app-header title="row slot" />
+<app-content>
+  <app-cell label="默认" value="内容" />
+</app-content>
+
+<app-header title="col slot" />
+<app-content>
+  <app-cell label="默认" value="内容" />
+</app-content>

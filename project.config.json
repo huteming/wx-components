@@ -29,7 +29,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 5,
+			"current": 6,
 			"list": [
 				{
 					"id": -1,
@@ -64,7 +64,13 @@
 				{
 					"id": -1,
 					"name": "icon",
-					"pathName": "pages/icon/icon"
+					"pathName": "pages/icon/icon",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "layout",
+					"pathName": "pages/layout/layout"
 				}
 			]
 		}

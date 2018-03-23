@@ -7,6 +7,7 @@
     <app-cell label="Panel 面板" to="./panel/panel" is-link />
     <app-cell label="Cell 单元格" to="./cell/cell" is-link />
     <app-cell label="Icon 图标" to="./icon/icon" is-link />
+    <app-cell label="Lyaout 布局" to="./layout/layout" is-link />
   </app-content>
 
   <app-header title="表单" />
