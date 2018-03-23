@@ -1,10 +1,12 @@
 <view class="page">
   <app-header title="基础组件" />
   <app-content>
+    <!-- <app-cell label="动态布局" to="./async-layout/async-layout" is-link /> -->
     <app-cell label="Button 按钮" to="./button/button" is-link />
     <app-cell label="Badge 徽章" to="./badge/badge" is-link />
     <app-cell label="Panel 面板" to="./panel/panel" is-link />
     <app-cell label="Cell 单元格" to="./cell/cell" is-link />
+    <app-cell label="Icon 图标" to="./icon/icon" is-link />
   </app-content>
 
   <app-header title="表单" />

@@ -1,1 +1,11 @@
-<app-icon icon="{{ icon }}" color="{{ color }}" />
+
+<view class="weui-grids">
+  <view class="weui-grid" wx:for="{{ grids }}" wx:key="*this">
+
+    <view class="weui-grid__icon">
+      <app-icon icon="{{ item }}" />
+    </view>
+
+    <view class="weui-grid__label">{{ item }}</view>
+  </view>
+</view>

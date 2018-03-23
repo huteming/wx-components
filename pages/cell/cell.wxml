@@ -2,7 +2,7 @@
 
 <app-content>
   <app-cell label="将组件嵌套到content中" value="有底色" /> 
-  <app-cell icon="user" label="测试value过长省略" value="测试，测试，测试，测试，测试，测试，测试，测试" is-link />
+  <app-cell icon="user" label="{{ asyncLabel }}" value="测试，测试，测试，测试，测试，测试，测试，测试" is-link />
 
   <app-cell icon="user" label="test input" label-width="170" error>
     <app-input />

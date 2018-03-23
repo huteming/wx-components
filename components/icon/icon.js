@@ -39,4 +39,7 @@ Component({
   methods: {
 
   },
+
+  ready () {
+  }
 })

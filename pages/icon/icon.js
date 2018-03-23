@@ -5,20 +5,19 @@ Page({
    * 页面的初始数据
    */
   data: {
-    icon: 'user',
-    color: 'primary',
+    grids: [
+      'time', 'temperature', 'lamp', 'date', 'voltage', 'electricity', 'brightness',
+      'project', 'camera', 'add', 'right', 'left', 'success', 'error', 'warning', 'config',
+      'user', 'users', 'password', 'edit', 'search', 'book', 'list', 'light', 'charge', 'discharge',
+      'remaining'
+    ]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    setTimeout(() => {
-      this.setData({
-        // icon: 'project',
-        color: 'primary',
-      })
-    }, 2000)
+
   },
 
   /**

@@ -22,7 +22,8 @@
     "pages/cell/cell",
     "pages/actionsheet/actionsheet",
     "pages/swiper/swiper",
-    "pages/badge/badge"
+    "pages/badge/badge",
+    "pages/async-layout/async-layout"
   ],
   "window": {
     "backgroundTextStyle": "light",

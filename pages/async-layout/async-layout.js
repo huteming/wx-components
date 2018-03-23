@@ -1,28 +1,33 @@
-// test/cell/cell.js
+const base64 = require('../../assets/js/base64.js')
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    asyncLabel: '测试value过长省略'
+  
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    setTimeout(() => {
-      this.setData({
-        asyncLabel: 'async label'
-      })
-    }, 2000)
+    this.setData({
+      icon: base64.icon20
+    });
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
+    var query = wx.createSelectorQuery()
+    query.select('#cell').boundingClientRect()
+    query.selectViewport().scrollOffset()
+    query.exec(function (res) {
+      console.log(res[0])
+    })
   },
 
   /**
