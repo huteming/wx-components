@@ -1,1 +1,11 @@
-<app-footer> footer </app-footer>
+<app-footer loading />
+<app-footer text="footer" />
+<app-footer />
+
+
+<!--  文档  -->
+<app-header title="属性" />
+<app-content>
+  <app-cell label="loading*false" value="加载中" />
+  <app-cell label="text" value="显示文本" />
+</app-content>

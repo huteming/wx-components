@@ -1,5 +1,7 @@
-<view class="weui-loadmore weui-loadmore_line">
-  <view class="weui-loadmore__tips weui-loadmore__tips_in-line">
-    <slot />
+<view class="c-footer c-footer_line">
+  <view class="c-footer__tips c-footer__tips_in-line">
+    <text wx:if="{{ loading }}" class="c-footer-loading"></text>
+    <text wx:elif="{{ text }}"> {{ text }} </text>
+    <text wx:else class="c-footer__tips_in-dot"></text>
   </view>
 </view>
