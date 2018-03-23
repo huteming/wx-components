@@ -2,13 +2,14 @@
   <app-header title="基础组件" />
   <app-content>
     <!-- <app-cell label="动态布局" to="./async-layout/async-layout" is-link /> -->
-    <app-cell label="Button 按钮" to="./button/button" is-link />
-    <app-cell label="Badge 徽章" to="./badge/badge" is-link />
-    <app-cell label="Panel 面板" to="./panel/panel" is-link />
-    <app-cell label="Cell 单元格" to="./cell/cell" is-link />
-    <app-cell label="Icon 图标" to="./icon/icon" is-link />
-    <app-cell label="Lyaout 布局" to="./layout/layout" is-link />
-    <app-cell label="Footer" to="./footer/footer" is-link />
+    <app-cell label="button 按钮" to="./button/button" is-link />
+    <app-cell label="badge 徽章" to="./badge/badge" is-link />
+    <app-cell label="panel 面板" to="./panel/panel" is-link />
+    <app-cell label="cell 单元格" to="./cell/cell" is-link />
+    <app-cell label="icon 图标" to="./icon/icon" is-link />
+    <app-cell label="lyaout 布局" to="./layout/layout" is-link />
+    <app-cell label="footer 底部" to="./footer/footer" is-link />
+    <app-cell label="chart 图表" to="./chart/chart" is-link />
   </app-content>
 
   <app-header title="表单" />

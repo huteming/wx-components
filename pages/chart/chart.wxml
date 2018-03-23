@@ -1,8 +1,12 @@
-<app-chart height="{{ asyncHeight }}" />
-<app-chart type="pie" height="{{ asyncHeight }}" /> 
-
 <app-chart height="200" />
 <app-chart type="pie" height="200" />
 
-<app-chart />
-<app-chart type="pie" /> 
+<!--  文档  -->
+<app-header title="属性" />
+<app-content>
+  <app-cell label="id" value="图表唯一标识符" />
+  <app-cell label="type*line" value="图表类型, line, pie" />
+  <app-cell label="options" value="坐标及数据" />
+  <app-cell label="width*整屏宽度" value="宽度" />
+  <app-cell label="height*整屏高度" value="高度" />
+</app-content>

@@ -15,6 +15,10 @@ Component({
       value: 'selfCanvas',
     },
 
+    /**
+     * 图表类型
+     * line, pie
+     */
     type: {
       type: String,
       value: 'line',
