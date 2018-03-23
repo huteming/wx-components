@@ -17,7 +17,7 @@
     "pages/header/header",
     "pages/footer/footer",
     "pages/content/content",
-    "pages/checbox/checbox",
+    "pages/checkbox/checkbox",
     "pages/chart/chart",
     "pages/cell/cell",
     "pages/actionsheet/actionsheet",

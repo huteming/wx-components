@@ -1,5 +1,5 @@
-<view class="checkbox-cells">
-  <checkbox-group bindchange="handleChange" wx:if="{{ checkboxItems.length }}">
+<view class="checkbox-cells" wx:if="{{ checkboxItems.length }}">
+  <checkbox-group bindchange="handleChange">
     <label
       class="checkbox-cell checkbox-check__label"
       wx:for="{{ checkboxItems }}"
@@ -13,5 +13,6 @@
       <view class="checkbox-cell__bd">{{ item.label }}</view>
     </label>
   </checkbox-group>
-  <app-footer wx:else> 无数据 </app-footer>
 </view>
+
+<app-footer wx:else text="无数据" />
