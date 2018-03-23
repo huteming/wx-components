@@ -14,4 +14,7 @@
   <app-header title="表单" />
 
   <app-header title="操作反馈" />
+  <app-content>
+    <app-cell label="actionsheet 行动按钮" to="./actionsheet/actionsheet" is-link />
+  </app-content>
 </view>

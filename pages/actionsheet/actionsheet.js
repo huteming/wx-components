@@ -13,21 +13,18 @@ Page({
   },
 
   handleClick (e) {
-    console.log(e.detail)
+    wx.showModal({
+      title: '点击项的value值',
+      content: e.detail,
+      showCancel: false,
+    })
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    setTimeout(() => {
-      this.setData({
-        options: [
-          { label1: 'label1 - 4', value1: 'value1 - 4' },
-          { label: 'label - 4', value: 'value - 4' }
-        ]
-      })
-    }, 2000)
+
   },
 
   /**

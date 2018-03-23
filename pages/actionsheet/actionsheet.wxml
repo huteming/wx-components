@@ -1,3 +1,20 @@
 <app-actionsheet options="{{ options }}" catch:click="handleClick">
-  actionsheet
+  <button>点击</button>
 </app-actionsheet>
+
+
+<!--  文档  -->
+<app-header title="属性" />
+<app-content>
+  <app-cell label="options*Array" value="选项, {label, value}" />
+</app-content>
+
+<app-header title="事件" />
+<app-content>
+  <app-cell label="click" value="value" />
+</app-content>
+
+<app-header title="slot" />
+<app-content>
+  <app-cell label="默认" value="内容" />
+</app-content>
