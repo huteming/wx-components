@@ -9,11 +9,19 @@ Page({
   },
 
   handleClickTitle (e) {
-    console.log(e.detail)
+    wx.showModal({
+      title: '点击',
+      content: '标题',
+      showCancel: false,
+    })
   },
 
-  handleClickSubtitle(e) {
-    console.log(e.detail)
+  handleClickSubtitle (e) {
+    wx.showModal({
+      title: '点击',
+      content: '副标题',
+      showCancel: false,
+    })
   },
 
   /**

@@ -1,5 +1,5 @@
 <view class="c-navbar">
-  <app-navbar-header tabs="{{ tabs }}" active-name="{{ activeName }}" catch:change="handleChange" />
+  <app-navbar-header tabs="{{ tabs }}" active-name="{{ activeName }}" bind:change="handleChange" />
 
   <view class="c-navbar-content">
     <slot />

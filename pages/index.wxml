@@ -8,19 +8,30 @@
     <app-cell label="cell 单元格" to="./cell/cell" is-link />
     <app-cell label="icon 图标" to="./icon/icon" is-link />
     <app-cell label="lyaout 布局" to="./layout/layout" is-link />
+    <app-cell label="header 头部" to="./header/header" is-link />
     <app-cell label="footer 底部" to="./footer/footer" is-link />
     <app-cell label="chart 图表" to="./chart/chart" is-link />
+    <app-cell label="navbar 选项卡" to="./navbar/navbar" is-link />
+    <app-cell label="range 滑块" to="./range/range" is-link />
   </app-content>
 
 
   <app-header title="表单" />
   <app-content>
+    <app-cell label="form 表单" to="./form/form" is-link />
+    <app-cell label="input 输入框" to="./input/input" is-link />
+    <app-cell label="textarea 多行输入框" to="./textarea/textarea" is-link />
     <app-cell label="checkbox 多选" to="./checkbox/checkbox" is-link />
+    <app-cell label="radio 单选" to="./radio/radio" is-link />
+    <app-cell label="switch 切换按钮" to="./switch/switch" is-link />
   </app-content>
 
 
   <app-header title="操作反馈" />
   <app-content>
     <app-cell label="actionsheet 行动按钮" to="./actionsheet/actionsheet" is-link />
+    <app-cell label="datepicker 日期事件选择器" to="./datepicker/datepicker" is-link />
+    <app-cell label="picker 选择器" to="./picker/picker" is-link />
+    <app-cell label="slider 滑动操作" to="./slider/slider" is-link />
   </app-content>
 </view>

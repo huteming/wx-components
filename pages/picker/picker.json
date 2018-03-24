@@ -1,6 +1,8 @@
 {
   "usingComponents": {
-    "app-picker": "../../components/picker/picker",
-    "app-cell": "../../components/cell/cell"
+    "app-header": "../../components/header/header",
+    "app-content": "../../components/content/content",
+    "app-cell": "../../components/cell/cell",
+    "app-picker": "../../components/picker/picker"
   }
 }

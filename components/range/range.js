@@ -1,4 +1,3 @@
-// components/range/range.js
 Component({
   /**
    * 组件的属性列表
@@ -12,6 +11,21 @@ Component({
     value: {
       type: String,
       value: '',
+    },
+
+    min: {
+      type: Number,
+      value: 0,
+    },
+
+    max: {
+      type: Number,
+      value: 100,
+    },
+
+    step: {
+      type: Number,
+      value: 1,
     },
 
     showValue: {

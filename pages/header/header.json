@@ -1,5 +1,7 @@
 {
   "usingComponents": {
+    "app-content": "../../components/content/content",
+    "app-cell": "../../components/cell/cell",
     "app-header": "../../components/header/header"
   }
 }

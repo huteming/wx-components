@@ -2,14 +2,7 @@
 Component({
   relations: {
     '../slider-item/slider-item': {
-      type: 'child', // 关联的目标节点应为子节点
-      linked(target) {
-        if (this.data.layout) {
-          target.setData({
-            layout: this.data.layout,
-          })
-        }
-      },
+      type: 'child',
     }
   },
 
@@ -17,15 +10,6 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    /**
-     * 滑动后的操作按钮
-     * { label, value, event }
-     */
-    layout: {
-      type: Array,
-      value: null,
-    },
-
     height: {
       type: String,
       value: '',
@@ -64,10 +48,6 @@ Component({
         direction: 0,
         showState: false,
       })
-    },
-
-    handleCatch (e) {
-      // console.log(e)
     },
   }
 })

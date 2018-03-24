@@ -1,7 +1,9 @@
 {
   "usingComponents": {
+    "app-header": "../../components/header/header",
+    "app-content": "../../components/content/content",
+    "app-cell": "../../components/cell/cell",
     "app-slider": "../../components/slider/slider",
-    "app-slider-item": "../../components/slider-item/slider-item",
-    "app-cell": "../../components/cell/cell"
+    "app-slider-item": "../../components/slider-item/slider-item"
   }
 }

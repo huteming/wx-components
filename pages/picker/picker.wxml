@@ -1,3 +1,23 @@
-<app-cell label="当前选择">
-  <app-picker name="picker" value="{{ value }}" options="{{ options }}" catch:change="handleChange" />
-</app-cell>
+<app-picker
+  name="picker"
+  value="{{ value }}"
+  options="{{ options }}"
+  catch:change="handleChange" />
+
+
+<!--  文档  -->
+<view class="page__hd">
+  <view class="page__title">文档</view>
+</view>
+
+<app-header title="属性" />
+<app-content>
+  <app-cell label="name" value="标识符" />
+  <app-cell label="value" value="初始值" />
+  <app-cell label="options" value="[{label, value}]" />
+</app-content>
+
+<app-header title="事件" />
+<app-content>
+  <app-cell label="change" value="{name, value}" />
+</app-content>

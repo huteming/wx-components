@@ -8,15 +8,17 @@ Page({
     activeName: 'second'
   },
 
+  handleChange (e) {
+    this.setData({
+      activeName: e.detail,
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    setTimeout(() => {
-      this.setData({
-        // activeName: 'first'
-      })
-    }, 2000)
+
   },
 
   /**

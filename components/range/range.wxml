@@ -1,1 +1,7 @@
-<slider show-value="{{ showValue }}" value="{{ value }}" bindchange="handleChange" />
+<slider
+  min="{{ min }}"
+  max="{{ max }}"
+  step="{{ step }}"
+  value="{{ value }}"
+  show-value="{{ showValue }}"
+  bindchange="handleChange" />

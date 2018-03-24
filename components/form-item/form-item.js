@@ -28,17 +28,13 @@ Component({
       value: '',
     },
 
-    labelWidth: {
-      type: String,
-      value: '',
-    },
-
     /**
      * 验证规则
      * 示例：['required', 'min:3', 'max:10:12:13']
      */
     rules: {
       type: Array,
+      value: null,
       observer(val) {
         if (!val) return
         const validator = getValidator(val)
@@ -58,6 +54,8 @@ Component({
   data: {
     validator: null,
     required: false,
+
+    labelWidth: '',
   },
 
   /**

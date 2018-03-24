@@ -1,6 +1,29 @@
-<app-header title="title" subtitle="subtitle" catch:clickTitle="handleClickTitle" catch:clickSubtitle="handleClickSubtitle" />
+<app-header
+  title="title"
+  subtitle="subtitle"
+  catch:clickTitle="handleClickTitle"
+  catch:clickSubtitle="handleClickSubtitle" />
 
-<app-header>
-  <view slot="title">slot-title</view>
-  <view>slot-subtitle</view>
-</app-header>
+
+<!--  文档  -->
+<view class="page__hd">
+  <view class="page__title">文档</view>
+</view>
+
+<app-header title="属性" />
+<app-content>
+  <app-cell label="title" value="标题" />
+  <app-cell label="subtitle" value="副标题" />
+</app-content>
+
+<app-header title="事件" />
+<app-content>
+  <app-cell label="clickTitle" value="" />
+  <app-cell label="clickSubtitle" value="" />
+</app-content>
+
+<app-header title="slot" />
+<app-content>
+  <app-cell label="默认" value="副标题" />
+  <app-cell label="title" value="标题" />
+</app-content>

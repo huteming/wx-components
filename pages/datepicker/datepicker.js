@@ -18,13 +18,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    setTimeout(() => {
-      this.setData({
-        value: '10:10',
-        start: '10:12',
-        end: '10:50',
-      })
-    }, 2000)
+
   },
 
   /**

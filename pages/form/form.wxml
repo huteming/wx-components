@@ -1,3 +1,9 @@
+
+<view>当前表单对象：</view>
+<view>{{ submitModel }}</view>
+<view>表单验证结果</view>
+<view>{{ valid }}</view>
+
 <app-form
   model="{{ model }}"
   label-width="170"
@@ -5,6 +11,43 @@
   <app-form-item name="input" icon="user" label="input" rules="{{ rules }}">
     <app-input value="{{ model.input }}" />
   </app-form-item>
+
+  <app-form-item name="input2" icon="user" label="input2">
+    <app-input value="{{ model.input2 }}" />
+  </app-form-item>
 </app-form>
 
-<app-button type="primary" catch:click="handleSubmit" disabled="{{ disabled }}"> 保存 </app-button>
+
+<!--  文档  -->
+<view class="page__hd">
+  <view class="page__title">文档</view>
+</view>
+
+<app-header title="form 属性" />
+<app-content>
+  <app-cell label="model" value="表单数据对象" />
+  <app-cell label="label-width" value="label宽度" />
+</app-content>
+
+<app-header title="form 事件" />
+<app-content>
+  <app-cell label="change" value="{fields, valid}" />
+</app-content>
+
+<app-header title="form slot" />
+<app-content>
+  <app-cell label="默认" value="内容" />
+</app-content>
+
+<app-header title="form-item 属性" />
+<app-content>
+  <app-cell label="name" value="标识符" />
+  <app-cell label="icon" value="图标" />
+  <app-cell label="label" value="标题" />
+  <app-cell label="rules*Array" value="示例: ['required', 'min:3', 'max:10:12:13']" />
+</app-content>
+
+<app-header title="form-item slot" />
+<app-content>
+  <app-cell label="默认" value="input等表单内容" />
+</app-content>

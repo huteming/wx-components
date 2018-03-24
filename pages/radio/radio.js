@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    value: 'value - 4',
+    value: '',
     options: [
       { label: 'label - 1', value: 'value - 1' },
       { label: 'label - 2', value: 'value - 2' },
@@ -14,19 +14,16 @@ Page({
   },
 
   handleChange (e) {
-    console.log(e.detail)
+    this.setData({
+      value: e.detail.value
+    })
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    setTimeout(() => {
-      this.setData({
-        value: 'value - 1',
-        // options: [{ label: 'label - 4', value: 'value - 4' }]
-      })
-    }, 2000)
+
   },
 
   /**

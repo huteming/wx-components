@@ -7,6 +7,26 @@
     layout="{{ [{ label: '关注', value: item.value, event: 'star' }, { label: '删除', value: item.value, event: 'destroy' }] }}">
     <app-cell label="label" value="value" />
   </app-slider-item>
-</app-slider> 
+</app-slider>
 
-<view>结尾</view>
+
+
+<!--  文档  -->
+<view class="page__hd">
+  <view class="page__title">文档</view>
+</view>
+
+<app-header title="slider 属性" />
+<app-content>
+  <app-cell label="height" value="高度" />
+</app-content>
+
+<app-header title="slider-item 属性" />
+<app-content>
+  <app-cell label="layout" value="操作选项, [{label, value, event}]" />
+</app-content>
+
+<app-header title="slider-item 事件" />
+<app-content>
+  <app-cell label="event, 与layout中的event同名" value="value" />
+</app-content>

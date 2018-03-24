@@ -6,6 +6,9 @@ Page({
    */
   data: {
     options: [
+      { label: 'label - 1', value: 'value - 1' },
+      { label: 'label - 2', value: 'value - 2' },
+      { label: 'label - 3', value: 'value - 3' }
     ],
   },
 
@@ -21,17 +24,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    setTimeout(() => {
-      this.setData({
-        options: [
-          { label: 'label - 1', value: 'value - 1' },
-          { label: 'label - 2', value: 'value - 2' },
-          { label: 'label - 3', value: 'value - 3' },
-          { label: 'label - 4', value: 'value - 4' },
-          { label: 'label - 5', value: 'value - 5' },
-        ]
-      })
-    }, 2000)
+
   },
 
   /**

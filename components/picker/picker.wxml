@@ -1,4 +1,4 @@
-<wxs module="filter" src="../../app.wxs" />
+<wxs module="filter" src="./picker.wxs" />
 
 <picker
   id="picker"

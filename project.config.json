@@ -29,7 +29,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 10,
+			"current": 21,
 			"list": [
 				{
 					"id": -1,
@@ -94,7 +94,73 @@
 				{
 					"id": -1,
 					"name": "checkbox",
-					"pathName": "pages/checkbox/checkbox"
+					"pathName": "pages/checkbox/checkbox",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "datepicker",
+					"pathName": "pages/datepicker/datepicker",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "form",
+					"pathName": "pages/form/form",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "header",
+					"pathName": "pages/header/header",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "input",
+					"pathName": "pages/input/input",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "navbar",
+					"pathName": "pages/navbar/navbar",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "picker",
+					"pathName": "pages/picker/picker",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "radio",
+					"pathName": "pages/radio/radio",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "range",
+					"pathName": "pages/range/range",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "slider",
+					"pathName": "pages/slider/slider",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "switch",
+					"pathName": "pages/switch/switch",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "textarea",
+					"pathName": "pages/textarea/textarea"
 				}
 			]
 		}

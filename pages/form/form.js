@@ -8,34 +8,18 @@ Page({
     model: {
       other: 'other',
       input: 'input value',
-      input2: 'input value - 2',
-      input3: 'input value - 3',
-      input4: 'input value - 4',
+      input2: '',
     },
-    rules: ['required'],
-    otherValid: [true],
-    value: 'default value',
     submitModel: {},
-    disabled: true,
+    rules: ['required'],
+    valid: false,
   },
 
   handleChange (e) {
-    console.log('change', e.detail)
     const { fields, valid } = e.detail
     this.setData({
-      submitModel: fields,
-      disabled: !valid,
-    })
-  },
-
-  handleSubmit (e) {
-    console.log(this.data.submitModel)
-  },
-
-  handleTest (e) {
-    console.log(e.detail)
-    this.setData({
-      test: e.detail
+      submitModel: JSON.stringify(fields),
+      valid,
     })
   },
 
@@ -43,15 +27,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    setTimeout(() => {
-      this.setData({
-        value: 'async value',
-        // model: {
-        //   other: 'async other'
-        // }
-        // otherValid: [false]
-      })
-    }, 2000)
+
   },
 
   /**

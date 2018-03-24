@@ -1,1 +1,25 @@
-<app-datepicker mode="time" name="datepicker" value="{{ value }}" start="{{ start }}" end="{{ end }}" catch:change="handleChange" />
+<app-datepicker
+  mode="time"
+  name="time"
+  catch:change="handleChange" />
+
+<app-datepicker
+  mode="date"
+  name="date"
+  catch:change="handleChange" />
+
+
+<!--  文档  -->
+<app-header title="属性" />
+<app-content>
+  <app-cell label="mode*date" value="选择类型, date, time" />
+  <app-cell label="name" value="标识符" />
+  <app-cell label="value" value="初始值" />
+  <app-cell label="start" value="开始时间" />
+  <app-cell label="end" value="结束时间" />
+</app-content>
+
+<app-header title="事件" />
+<app-content>
+  <app-cell label="change" value="{name, value}" />
+</app-content>

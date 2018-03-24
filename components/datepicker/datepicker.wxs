@@ -1,0 +1,10 @@
+function empty(value) {
+  if (!value && value !== 0) {
+    return '请选择'
+  }
+  return value
+}
+
+module.exports = {
+  empty: empty,
+}

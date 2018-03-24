@@ -1,7 +1,7 @@
-<scroll-view scroll-y="{{ scrollY }}" style="height: {{ height }}px;" catchtouchmove="handleCatch">
+<scroll-view scroll-y="{{ scrollY }}" style="height: {{ height }}px;">
   <app-content catch:scroll="handleScroll" catch:closeSlider="handleSliderClose">
     <slot />
   </app-content>
 
-  <app-footer> 没有更多了 </app-footer>
+  <app-footer text="没有更多了" />
 </scroll-view>

@@ -9,18 +9,16 @@ Page({
   },
 
   handleChange (e) {
-    console.log(e.detail)
+    this.setData({
+      value: e.detail.value
+    })
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    setTimeout(() => {
-      this.setData({
-        value: true,
-      })
-    }, 2000)
+
   },
 
   /**

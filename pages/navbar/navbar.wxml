@@ -1,4 +1,6 @@
-<app-navbar>
+<view>当前选中: {{ activeName }}</view>
+
+<app-navbar active-name="{{ activeName }}" catch:change="handleChange">
   <app-navbar-item name="first">
     <image src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" class="slide-image" width="355" height="150"/>
   </app-navbar-item>
@@ -11,3 +13,25 @@
     <image src="http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg" class="slide-image" width="355" height="150"/>
   </app-navbar-item>
 </app-navbar>
+
+
+
+<!--  文档  -->
+<view class="page__hd">
+  <view class="page__title">文档</view>
+</view>
+
+<app-header title="navbar 属性" />
+<app-content>
+  <app-cell label="active-name" value="默认选中，对应 item 的 name 属性" />
+</app-content>
+
+<app-header title="navbar 事件" />
+<app-content>
+  <app-cell label="change" value="activeName" />
+</app-content>
+
+<app-header title="navbar-item 属性" />
+<app-content>
+  <app-cell label="name" value="唯一标识符" />
+</app-content>

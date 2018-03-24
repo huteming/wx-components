@@ -1,4 +1,29 @@
-<app-input name="input" value="{{ value }}" catch:change="handleChange" catch:focus="handleFocus" catch:blur="handleBlur" />
+<app-input placeholder="默认" />
 <app-input placeholder="password" password />
 <app-input placeholder="disabled" disabled />
-<app-input placeholder="focus" focus catch:focus="handleFocus" />
+<app-input placeholder="focus" focus />
+
+
+
+<!--  文档  -->
+<view class="page__hd">
+  <view class="page__title">文档</view>
+</view>
+
+<app-header title="属性" />
+<app-content>
+  <app-cell label="name" value="标识符" />
+  <app-cell label="value" value="初始值" />
+  <app-cell label="type*text" value="类型, text, number, idcard, digit" />
+  <app-cell label="placeholder" value="占位符" />
+  <app-cell label="password*false" value="是否为密码" />
+  <app-cell label="disabled*false" value="不可输入" />
+  <app-cell label="focus*false" value="聚焦" />
+</app-content>
+
+<app-header title="事件" />
+<app-content>
+  <app-cell label="change" value="{name, value}" />
+  <app-cell label="blur" value="{name, value}" />
+  <app-cell label="focus" value="{name, value}" />
+</app-content>

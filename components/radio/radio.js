@@ -4,6 +4,11 @@ Component({
    * 组件的属性列表
    */
   properties: {
+    name: {
+      type: String,
+      value: '',
+    },
+
     value: {
       type: String,
       value: '',
@@ -42,7 +47,11 @@ Component({
     handleChange(e) {
       const value = e.detail.value
       this.setCurrent(this.data.options, value)
-      this.triggerEvent('change', value, { bubbles: true, composed: true })
+      const data = {
+        name: this.data.name,
+        value,
+      }
+      this.triggerEvent('change', data, { bubbles: true, composed: true })
     },
 
     // 设置选中
