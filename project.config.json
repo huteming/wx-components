@@ -29,7 +29,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 20,
+			"current": 22,
 			"list": [
 				{
 					"id": -1,
@@ -162,6 +162,11 @@
 					"name": "textarea",
 					"pathName": "pages/textarea/textarea",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "select",
+					"pathName": "pages/select/select"
 				}
 			]
 		}

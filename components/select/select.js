@@ -1,28 +1,36 @@
 Component({
-
   /**
    * 组件的属性列表
    */
   properties: {
+
+    type: {
+      type: String,
+      value: '',
+    },
+
     name: {
       type: String,
       value: '',
     },
 
     value: {
-      type: Array,
-      value: [],
-      observer(val) {
-        this.setCurrent(this.data.options, val)
-      },
+      type: null,
+      value: '',
+      observer (val) {
+        this.setData({
+          normalizedValue: val,
+        })
+      }
     },
 
+    /**
+     * 选择项
+     * [{label, value}]
+     */
     options: {
       type: Array,
       value: [],
-      observer(val) {
-        this.setCurrent(val, this.data.current)
-      },
     },
   },
 
@@ -30,8 +38,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-    current: [],
-    checkboxItems: [],
+    normalizedValue: [],
   },
 
   /**
@@ -41,25 +48,16 @@ Component({
     // 改变选中
     handleChange(e) {
       const value = e.detail.value
-      this.setCurrent(this.data.options, value)
+
+      this.setData({
+        normalizedValue: value,
+      })
+
       const data = {
         name: this.data.name,
         value,
       }
       this.triggerEvent('change', data, { bubbles: true, composed: true })
-    },
-
-    // 设置选中
-    setCurrent(options, current) {
-      const checkboxItems = options.map(item => {
-        item.checked = current.indexOf(item.value) > -1
-        return item
-      })
-
-      this.setData({
-        checkboxItems,
-        current,
-      })
     },
   }
 })

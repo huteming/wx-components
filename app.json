@@ -8,7 +8,6 @@
     "pages/textarea/textarea",
     "pages/switch/switch",
     "pages/range/range",
-    "pages/radio/radio",
     "pages/datepicker/datepicker",
     "pages/picker/picker",
     "pages/panel/panel",
@@ -17,14 +16,14 @@
     "pages/header/header",
     "pages/footer/footer",
     "pages/content/content",
-    "pages/checkbox/checkbox",
     "pages/chart/chart",
     "pages/cell/cell",
     "pages/actionsheet/actionsheet",
     "pages/swiper/swiper",
     "pages/badge/badge",
     "pages/async-layout/async-layout",
-    "pages/layout/layout"
+    "pages/layout/layout",
+    "pages/select/select"
   ],
   "window": {
     "backgroundTextStyle": "light",

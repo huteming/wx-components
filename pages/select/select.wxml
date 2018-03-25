@@ -1,6 +1,8 @@
-<view>当前选中: {{ value }}</view>
+<view>当前选中: {{ radio }}</view>
 
-<app-radio options="{{ options }}" catch:change="handleChange" />
+<app-select type="radio" value="{{ radio }}" options="{{ options }}" catch:change="handleChangeRadio" />
+
+<button bindtap="handleSelect">选中第一个</button>
 
 
 <!--  文档  -->
@@ -10,6 +12,7 @@
 
 <app-header title="属性" />
 <app-content>
+  <app-cell label="type" value="选择类型[radio, checkbox]" />
   <app-cell label="name" value="标识符" />
   <app-cell label="value" value="初始值" />
   <app-cell label="options" value="选项: [{label, value}]" />

@@ -1,0 +1,7 @@
+function isSelected (value, selected) {
+  return selected.indexOf(value) > -1
+}
+
+module.exports = {
+  isSelected: isSelected,
+}

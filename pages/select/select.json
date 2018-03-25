@@ -3,6 +3,6 @@
     "app-header": "../../components/header/header",
     "app-content": "../../components/content/content",
     "app-cell": "../../components/cell/cell",
-    "app-radio": "../../components/radio/radio"
+    "app-select": "../../components/select/select"
   }
 }

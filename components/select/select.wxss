@@ -1,4 +1,4 @@
-.radios {
+.c-select-content {
   position: relative;
   margin-top: 0;
   background-color: #fff;
@@ -6,18 +6,18 @@
   font-size: 17px;
 }
 
-.radios::before {
+.c-select-content::before {
   top: 0;
   border-top: 1rpx solid #d9d9d9;
 }
 
-.radios::after {
+.c-select-content::after {
   bottom: 0;
   border-bottom: 1rpx solid #d9d9d9;
 }
 
-.radios::after,
-.radios::before {
+.c-select-content::after,
+.c-select-content::before {
   content: " ";
   position: absolute;
   left: 0;
@@ -26,7 +26,7 @@
   color: #d9d9d9;
 }
 
-.radio {
+.c-select-item {
   padding: 10px 15px;
   position: relative;
   display: -webkit-box;
@@ -37,7 +37,7 @@
   align-items: center;
 }
 
-.radio::before {
+.c-select-item::before {
   content: " ";
   position: absolute;
   top: 0;
@@ -48,32 +48,36 @@
   color: #d9d9d9;
 }
 
-.radio::first-child::before {
+.c-select-item::first-child::before {
   display: none;
 }
 
-.radio-active:active {
-  background-color: #ececec;
-}
-
-.radio-check {
+.c-select-check {
   position: absolute;
   left: -9999px;
 }
 
-.radio__bd {
+.c-select-item__hd {
+  padding-right: 0.35em;
+}
+
+.c-select-item__bd {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   flex: 1;
 }
 
-.radio__ft {
+.c-select-item__ft {
   padding-left: 0.35em;
   text-align: right;
   color: #999;
 }
 
-.radio-icon {
+.c-select-icon {
   margin-left: 3.2px;
   margin-right: 3.2px;
+}
+
+.c-select-active:active {
+  background-color: #ececec;
 }

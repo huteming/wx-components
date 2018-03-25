@@ -1,0 +1,44 @@
+<wxs src="./select.wxs" module="filter" />
+
+<!--  单选  -->
+<radio-group class="c-select-content" bindchange="handleChange" wx:if="{{ type === 'radio' }}">
+  <label
+    wx:for="{{ options }}"
+    wx:key="value"
+    class="c-select-item c-select-active">
+    <radio class="c-select-check" value="{{ item.value }}" checked="{{ filter.isSelected(item.value, normalizedValue) }}"/>
+
+    <!-- <view class="c-select-item__hd">
+      <icon class="c-select-icon" type="circle" size="23" wx:if="{{ !item.checked }}"></icon>
+      <icon class="c-select-icon" type="success" size="23" wx:if="{{ item.checked }}"></icon>
+    </view>  -->
+
+    <view class="c-select-item__bd">{{ item.label }}</view>
+    <view class="c-select-item__ft" hidden="{{ !filter.isSelected(item.value, normalizedValue) }}">
+      <icon class="c-select-icon" type="success_no_circle" size="16"></icon>
+    </view>
+  </label>
+</radio-group>
+
+
+<!--  多选  -->
+<checkbox-group class="c-select-content" bindchange="handleChange" wx:if="{{ type === 'checkbox' }}">
+  <label
+    wx:for="{{ options }}"
+    wx:key="value"
+    class="c-select-item c-select-active">
+    <checkbox class="c-select-check" value="{{ item.value }}" checked="{{ filter.isSelected(item.value, normalizedValue) }}"/>
+
+    <!-- <view class="c-select-item__hd">
+      <icon class="c-select-icon" type="circle" size="23" wx:if="{{ !item.checked }}"></icon>
+      <icon class="c-select-icon" type="success" size="23" wx:if="{{ item.checked }}"></icon>
+    </view>  -->
+
+    <view class="c-select-item__bd">{{ item.label }}</view>
+
+    <view class="c-select-item__ft" hidden="{{ !filter.isSelected(item.value, normalizedValue) }}">
+      <icon class="c-select-icon" type="success_no_circle" size="16"></icon>
+    </view>
+  </label>
+</checkbox-group>
+
