@@ -1,1 +1,5 @@
-<switch checked="{{ value }}" bindchange="handleChange" />
+<switch
+  checked="{{ value }}"
+  type="{{ type }}"
+  color="{{ color }}"
+  bindchange="handleChange" />

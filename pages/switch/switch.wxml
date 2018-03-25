@@ -1,6 +1,6 @@
 <view>当前状态: {{ value }}</view>
 
-<app-switch name="switch" catch:change="handleChange" />
+<app-switch name="switch" color="#abc" catch:change="handleChange" />
 
 
 <!--  文档  -->
@@ -12,6 +12,8 @@
 <app-content>
   <app-cell label="name" value="标识符" />
   <app-cell label="value" value="初始值" />
+  <app-cell label="type*switch" value="样式[checkbox, switch]" />
+  <app-cell label="color" value="选中颜色，同 css 的 color" />
 </app-content>
 
 <app-header title="事件" />

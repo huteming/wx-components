@@ -1,4 +1,3 @@
-// components/switch/switch.js
 Component({
   /**
    * 组件的属性列表
@@ -9,9 +8,29 @@ Component({
       value: '',
     },
 
+    /**
+     * 是否选中
+     */
     value: {
       type: Boolean,
       value: false,
+    },
+
+    /**
+     * 样式
+     * switch, checkbox
+     */
+    type: {
+      type: String,
+      value: 'switch',
+    },
+
+    /**
+     * 选中颜色，同 css 的 color
+     */
+    color: {
+      type: String,
+      value: '',
     },
   },
 
@@ -33,5 +52,5 @@ Component({
       }
       this.triggerEvent('change', data, { bubbles: true, composed: true })
     }
-  }
+  },
 })
