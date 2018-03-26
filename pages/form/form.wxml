@@ -1,21 +1,24 @@
+<wxs src="./form.wxs" module="filter" />
 
 <view>当前表单对象：</view>
-<view>{{ submitModel }}</view>
-<view>表单验证结果</view>
-<view>{{ valid }}</view>
+<view>{{ filter.objToString(model) }}</view>
 
 <app-form
+  id="form"
   model="{{ model }}"
   label-width="170"
-  catch:change="handleChange">
-  <app-form-item name="input" icon="user" label="input" rules="{{ rules }}">
+  catch:change="handleChange"
+  rules="{{ rules }}">
+  <app-form-item prop="input" icon="user" label="input">
     <app-input value="{{ model.input }}" />
   </app-form-item>
 
-  <app-form-item name="input2" icon="user" label="input2">
+  <app-form-item prop="input2" icon="user" label="input2">
     <app-input value="{{ model.input2 }}" />
   </app-form-item>
 </app-form>
+
+<button bindtap="handleSubmit">提交</button>
 
 
 <!--  文档  -->
@@ -26,12 +29,17 @@
 <app-header title="form 属性" />
 <app-content>
   <app-cell label="model" value="表单数据对象" />
+  <!-- [
+        { validate: 'required', message: 'input 必填' },
+        { validate: 'min:3', message: 'input 最小长度为3' }
+      ]  -->
+  <app-cell label="rules" value="" />
   <app-cell label="label-width" value="label宽度" />
 </app-content>
 
 <app-header title="form 事件" />
 <app-content>
-  <app-cell label="change" value="{fields, valid}" />
+  <app-cell label="change" value="model" />
 </app-content>
 
 <app-header title="form slot" />
@@ -41,10 +49,9 @@
 
 <app-header title="form-item 属性" />
 <app-content>
-  <app-cell label="name" value="标识符" />
+  <app-cell label="prop" value="表单域 model 字段" />
   <app-cell label="icon" value="图标" />
   <app-cell label="label" value="标题" />
-  <app-cell label="rules*Array" value="示例: ['required', 'min:3', 'max:10:12:13']" />
 </app-content>
 
 <app-header title="form-item slot" />

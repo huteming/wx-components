@@ -1,28 +1,25 @@
 import getValidator from '../../assets/js/validator.js'
-import behaviorForm from '../../behaviors/form.js'
-import tools from '../../assets/js/tools.js'
 
 Component({
   relations: {
-    'behaviorForm': {
+    '../form-item/form-item': {
       type: 'descendant',
       linked (target) {
-        const { label, name, rules } = target.data
-        target.setData({
-          labelWidth: this.data.labelWidth,
-        })
+        const { prop } = target.data
+        const { labelWidth, rules } = this.data
+        if (labelWidth) {
+          target.setStyleLabel(labelWidth)
+        }
 
-        if (name && rules) {
-          this.setData({
-            [`rules.${name}`]: getValidator(rules),
-            [`valids.${name}`]: false,
-          })
-          console.log(`需要验证属性：${label}`, `规则: ${rules}`)
+        if (!rules[prop]) {
+          console.log(`无需验证属性：${prop}`)
         } else {
-          console.log(`无需验证属性：${label}`)
+          console.log(`需要验证属性：${prop}`)
+          const isRequired = rules[prop].some(item => item.validate === 'required')
+          target.setRequired(isRequired)
+          this.updateValidator(prop)
         }
       },
-      target: behaviorForm,
     }
   },
 
@@ -30,21 +27,26 @@ Component({
    * 组件的属性列表
    */
   properties: {
+    /**
+     * 表单数据模型
+     */
     model: {
       type: Object,
       value: {},
-      observer (val) {
-        this.setData({
-          fields: { ...val },
-        })
-        if (this.data.isReady) {
-          this.setValids()
-        }
-      },
+    },
+
+    /**
+     * 验证规则
+     * 示例：['required', 'min:3', 'max:10:12:13']
+     */
+    rules: {
+      type: Object,
+      value: {},
     },
 
     labelWidth: {
-      type: String,
+      type: Number,
+      value: '',
     },
   },
 
@@ -52,71 +54,77 @@ Component({
    * 组件的初始数据
    */
   data: {
-    // 表单对象
-    fields: {},
-    // 表单属性验证结果
+    /**
+     * 表单数据验证结果
+     */
     valids: {},
-    // 表单属性验证规则
-    rules: {},
 
-    isReady: false,
+    /**
+     * 表单数据验证方法
+     */
+    validators: {},
   },
 
   /**
    * 组件的方法列表
    */
   methods: {
-    // 子组件中的 change
-    handleChange(e) {
-      const { name, value, valid } = e.detail
-      if (!name) {
-        console.log('无 name 属性，忽略本次 change')
+    /**
+     * update validators
+     * 需要在 item 插入时，设置该 item 对应的 prop 的验证方法
+     */
+    updateValidator (prop) {
+      const { rules } = this.data
+
+      this.setData({
+        [`validators.${prop}`]: getValidator(rules[prop]),
+      })
+    },
+
+    /**
+     * 处理表单的 change 事件
+     */
+    handleChange (e) {
+      const { prop, value } = e.detail
+
+      if (!prop) {
+        console.log('无 prop 属性，忽略本次 change')
         return
       }
 
       this.setData({
-        [`fields.${name}`]: value,
-        [`valids.${name}`]: valid,
+        [`model.${prop}`]: value,
       })
-      this.eventChange()
+
+      this.triggerEvent('change', this.data.model, { bubbles: true, composed: true })
     },
 
-    // 验证表单，并保存结果
-    setValids () {
-      const { fields, rules } = this.data
-      const valids = Object.assign({}, this.data.valids)
-      Object.keys(rules).forEach(name => {
-        const fn = rules[name]
-        const value = fields[name]
-        valids[name] = fn(value)
-      })
-      this.setData({
-        valids,
-      })
+    /**
+     * 验证表单
+     * 供外部调用，类似 element-ui 中的调用方式
+     * 过程：遍历验证所有有验证方法的字段，如果有message，认为验证不通过，设置对应 item 的 valid 为 false，
+     * 回调函数的参数为所有验证结果
+     */
+    validate (callback) {
+      const nodes = this.getRelationNodes('../form-item/form-item')
+      const { validators, model } = this.data
+      let valid = true
 
-      this.eventChange()
+      Object.keys(validators).forEach(prop => {
+        const value = model[prop]
+        const fn = validators[prop]
+        const message = fn(value)
+        const target = nodes.find(item => item.data.prop === prop)
+        target.setValid(!message)
+        if (message) {
+          valid = false
+        }
+      })
+      callback(valid)
     },
-
-    // 事件 change
-    eventChange () {
-      const { fields, valids } = this.data
-      const valid = tools.getValuesInObj(valids).every(item => !!item)
-
-      const data = {
-        fields,
-        valid,
-      }
-
-      setTimeout(() => {
-        this.triggerEvent('change', data, { bubbles: true, composed: true })
-      })
-    }
   },
 
   ready () {
-    this.setValids()
-    this.setData({
-      isReady: true,
-    })
+
   }
 })

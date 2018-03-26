@@ -1,8 +1,23 @@
-<app-cell icon="{{ icon }}" catch:change="handleChange">
-  <view slot="label" style="width: {{ labelWidth }}px;">
-    <text class="c-form-item-required" wx:if="{{ required }}"> * </text>
+
+<view class="c-form-item">
+  <!--  图标  -->
+  <view class="c-form-item__flex c-form-item__hd" wx:if="{{ icon }}">
+    <app-icon icon="{{ icon }}" />
+  </view>
+
+  <!--  标题  -->
+  <view class="c-form-item__flex c-form-item__bd" style="{{ styleLabel }}">
+    <text class="c-form-item__required" wx:if="{{ required }}"> * </text>
     <text>{{ label }}</text>
   </view>
 
-  <slot />
-</app-cell>
+  <!--  值  -->
+  <view class="c-form-item__flex c-form-item__ft" catch:change="handleChange">
+    <slot />
+  </view>
+
+  <!--  标识  -->
+  <view class="c-form-item__flex c-form-item__tip" hidden="{{ valid }}">
+    <icon type="warn" size="23" color="#E64340"></icon>
+  </view>
+</view>

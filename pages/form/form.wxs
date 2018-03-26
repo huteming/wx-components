@@ -1,0 +1,7 @@
+function objToString (obj) {
+  return JSON.stringify(obj)
+}
+
+module.exports = {
+  objToString: objToString,
+}

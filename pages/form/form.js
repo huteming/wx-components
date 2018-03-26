@@ -10,16 +10,26 @@ Page({
       input: 'input value',
       input2: '',
     },
-    submitModel: {},
-    rules: ['required'],
-    valid: false,
+    rules: {
+      input: [
+        { validate: 'required', message: 'input 必填' },
+        { validate: 'min:3', message: 'input 最小长度为3' }
+      ],
+      input2: [
+        { validate: 'min:3', message: '最小长度为3' }
+      ],
+    },
   },
 
   handleChange (e) {
-    const { fields, valid } = e.detail
     this.setData({
-      submitModel: JSON.stringify(fields),
-      valid,
+      model: e.detail,
+    })
+  },
+
+  handleSubmit (e) {
+    this.selectComponent('#form').validate(valid => {
+      console.log(valid)
     })
   },
 

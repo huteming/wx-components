@@ -1,8 +1,5 @@
-import getValidator from '../../assets/js/validator.js'
-import behaviorFrom from '../../behaviors/form.js'
 
 Component({
-  behaviors: [behaviorFrom],
   relations: {
     '../form/form': {
       type: 'ancestor',
@@ -13,7 +10,10 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    name: {
+    /**
+     * 表单域 model 字段
+     */
+    prop: {
       type: String,
       value: '',
     },
@@ -27,55 +27,49 @@ Component({
       type: String,
       value: '',
     },
-
-    /**
-     * 验证规则
-     * 示例：['required', 'min:3', 'max:10:12:13']
-     */
-    rules: {
-      type: Array,
-      value: null,
-      observer(val) {
-        if (!val) return
-        const validator = getValidator(val)
-        const required = val.indexOf('required') > -1
-
-        this.setData({
-          validator,
-          required,
-        })
-      },
-    },
   },
 
   /**
    * 组件的初始数据
    */
   data: {
-    validator: null,
     required: false,
+    valid: true,
 
-    labelWidth: '',
+    styleLabel: '',
   },
 
   /**
    * 组件的方法列表
    */
   methods: {
-    handleChange(e) {
+    handleChange (e) {
       const { value } = e.detail
-      const valid = this.validate(value)
+      const { prop } = this.data
+
       const data = {
-        name: this.data.name,
+        prop,
         value,
-        valid,
       }
       this.triggerEvent('formItemChange', data, { bubbles: true, composed: true })
     },
 
-    validate (value) {
-      const { validator } = this.data
-      return validator ? validator(value) : true
-    }
+    setStyleLabel (width) {
+      this.setData({
+        styleLabel: `width: ${width}px;`
+      })
+    },
+
+    setRequired (required) {
+      this.setData({ required })
+    },
+
+    setValid (valid) {
+      this.setData({ valid })
+    },
+  },
+
+  ready () {
+
   },
 })
