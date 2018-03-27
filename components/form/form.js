@@ -115,7 +115,7 @@ Component({
         const fn = validators[prop]
         const message = fn(value)
         const target = nodes.find(item => item.data.prop === prop)
-        target.setValid(!message)
+        target.setErrorMessage(message)
         if (message) {
           valid = false
         }

@@ -1,6 +1,7 @@
 {
   "component": true,
   "usingComponents": {
+    "app-tooltip": "../tooltip/tooltip",
     "app-icon": "../icon/icon"
   }
 }

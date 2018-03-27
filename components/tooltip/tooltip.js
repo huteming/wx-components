@@ -1,4 +1,3 @@
-// components/tooltip/tooltip.js
 Component({
   options: {
     multipleSlots: true // 在组件定义时的选项中启用多slot支持
@@ -20,6 +19,14 @@ Component({
     content: {
       type: String,
       value: '',
+    },
+
+    /**
+     * 关闭文字提示
+     */
+    disabled: {
+      type: Boolean,
+      value: false,
     },
   },
 

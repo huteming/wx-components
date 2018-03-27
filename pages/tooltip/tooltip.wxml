@@ -1,6 +1,10 @@
 <view style="display: flex;align-items: center;justify-content: center;height: 200px;">
-   <app-tooltip placement="left-start" > <text>tooltip</text>  <text slot="content">content</text> </app-tooltip> 
+   <app-tooltip placement="left-start" disabled="{{ disabled }}" content="{{ content }}">
+     <text>tooltip</text> 
+      <!-- <text slot="content">{{ content }}</text>  -->
+  </app-tooltip> 
 </view>
+<button bindtap="handleClick">{{ disabled ? '打开文字提示' : '关闭文字提示' }}</button>
 
 <!--  文档  -->
 <view class="page__hd">
@@ -11,6 +15,7 @@
 <app-content>
   <app-cell label="placement*left-start" value="位置" />
   <app-cell label="content" value="提示内容" />
+  <app-cell label="disabled*false" value="关闭文字提示" />
 </app-content>
 
 <app-header title="slot" />

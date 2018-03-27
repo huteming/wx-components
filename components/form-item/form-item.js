@@ -34,7 +34,7 @@ Component({
    */
   data: {
     required: false,
-    valid: true,
+    message: '',
 
     styleLabel: '',
   },
@@ -64,8 +64,8 @@ Component({
       this.setData({ required })
     },
 
-    setValid (valid) {
-      this.setData({ valid })
+    setErrorMessage (message = '') {
+      this.setData({ message })
     },
   },
 

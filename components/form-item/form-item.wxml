@@ -17,7 +17,9 @@
   </view>
 
   <!--  标识  -->
-  <view class="c-form-item__flex c-form-item__tip" hidden="{{ valid }}">
-    <icon type="warn" size="23" color="#E64340"></icon>
+  <view class="c-form-item__flex c-form-item__tip" hidden="{{ !message }}">
+    <app-tooltip content="{{ message }}">
+      <icon type="warn" size="23" color="#E64340"></icon>
+    </app-tooltip>
   </view>
 </view>

@@ -29,7 +29,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 23,
+			"current": 12,
 			"list": [
 				{
 					"id": -1,
@@ -172,7 +172,8 @@
 				{
 					"id": -1,
 					"name": "tooltip",
-					"pathName": "pages/tooltip/tooltip"
+					"pathName": "pages/tooltip/tooltip",
+					"query": ""
 				}
 			]
 		}

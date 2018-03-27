@@ -5,7 +5,15 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    content: '螺丝扣',
+
+    disabled: false,
+  },
+
+  handleClick () {
+    this.setData({
+      disabled: !this.data.disabled,
+    })
   },
 
   /**
