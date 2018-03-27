@@ -1,0 +1,66 @@
+.c-tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.c-tooltip-content {
+  position: absolute;
+  background: #303133;
+  color: #fff;
+  border-radius: 4px;
+  padding: 10px;
+  z-index: 2000;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.c-tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 6px;
+}
+
+/*  right-start  */
+.c-tooltip-content__right-start {
+  top: 0;
+  left: 100%;
+  margin-left: 12px;
+}
+
+.c-tooltip-arrow__right-start {
+  left: -6px;
+  top: 5px;
+  border-right-color: #303133;
+  border-left-width: 0;
+}
+
+/*  right-end  */
+.c-tooltip-content__right-end {
+  top: -100%;
+  left: 100%;
+  margin-left: 12px;
+}
+
+.c-tooltip-arrow__right-end {
+  left: -6px;
+  bottom: 5px;
+  border-right-color: #303133;
+  border-left-width: 0;
+}
+
+/*  left-start  */
+.c-tooltip-content__left-start {
+  top: 0;
+  right: 100%;
+  margin-right: 12px;
+}
+
+.c-tooltip-arrow__left-start {
+  right: -6px;
+  top: 5px;
+  border-left-color: #303133;
+  border-right-width: 0;
+}

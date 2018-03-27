@@ -1,0 +1,10 @@
+<view class="c-tooltip" bindtouchstart="handleTouchStart" bindtouchend="handleTouchEnd" >
+  <slot />
+
+  <view class="c-tooltip-content c-tooltip-content__{{ placement }}" hidden="{{ hidden }}">
+    <text>{{ content }}</text>
+    <slot name="content" />
+
+    <view class="c-tooltip-arrow c-tooltip-arrow__{{ placement }}"></view>
+  </view>
+</view>

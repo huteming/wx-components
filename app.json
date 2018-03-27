@@ -23,7 +23,8 @@
     "pages/badge/badge",
     "pages/async-layout/async-layout",
     "pages/layout/layout",
-    "pages/select/select"
+    "pages/select/select",
+    "pages/tooltip/tooltip"
   ],
   "window": {
     "backgroundTextStyle": "light",

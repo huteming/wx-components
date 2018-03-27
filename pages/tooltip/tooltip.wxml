@@ -1,0 +1,20 @@
+<view style="display: flex;align-items: center;justify-content: center;height: 200px;">
+   <app-tooltip placement="left-start" > <text>tooltip</text>  <text slot="content">content</text> </app-tooltip> 
+</view>
+
+<!--  文档  -->
+<view class="page__hd">
+  <view class="page__title">文档</view>
+</view>
+
+<app-header title="属性" />
+<app-content>
+  <app-cell label="placement*left-start" value="位置" />
+  <app-cell label="content" value="提示内容" />
+</app-content>
+
+<app-header title="slot" />
+<app-content>
+  <app-cell label="默认" value="内容" />
+  <app-cell label="content" value="提示内容" />
+</app-content>

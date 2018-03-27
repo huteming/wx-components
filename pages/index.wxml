@@ -13,6 +13,7 @@
     <app-cell label="chart 图表" to="./chart/chart" is-link />
     <app-cell label="navbar 选项卡" to="./navbar/navbar" is-link />
     <app-cell label="range 滑块" to="./range/range" is-link />
+    <app-cell label="tooltip 文字提示" to="./tooltip/tooltip" is-link />
   </app-content>
 
 

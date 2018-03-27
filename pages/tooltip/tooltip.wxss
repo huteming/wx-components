@@ -1,0 +1,41 @@
+.test-border {
+    border-top: 50px solid #ff0000;
+    border-bottom: 50px solid #00a000;
+    border-left: 50px solid #ff7f50;
+    border-right: 50px solid #436eee;
+    text-align: center;
+}
+
+.test-border1 {
+    width: 0;
+    height: 0;
+    border-top: 50px solid #ff0000;
+    border-bottom: 50px solid #00a000;
+    border-left: 50px solid #ff7f50;
+    border-right: 50px solid #436eee;
+    text-align: center;
+}
+
+.test-border2 {
+    width: 0;
+    height: 0;
+    border-top: 50px solid #ff0000;
+    border-bottom: 50px solid #00a000;
+    border-left: 50px solid #ff7f50;
+}
+
+.test-border3 {
+    width: 0;
+    height: 0;
+    border-top: 50px solid #ff0000;
+    border-left: 50px solid #ff7f50;
+}
+
+.test-border4 {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 50px solid #ff7f50;
+    border-right: 50px solid transparent;
+}
