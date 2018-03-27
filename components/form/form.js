@@ -92,6 +92,11 @@ Component({
         return
       }
 
+      // 验证
+      const validate = this.data.validators[prop]
+      const message = validate(value)
+      this.setTargetMessage(prop, message)
+
       this.setData({
         [`model.${prop}`]: value,
       })
@@ -102,11 +107,10 @@ Component({
     /**
      * 验证表单
      * 供外部调用，类似 element-ui 中的调用方式
-     * 过程：遍历验证所有有验证方法的字段，如果有message，认为验证不通过，设置对应 item 的 valid 为 false，
+     * 过程：遍历验证所有有验证方法的字段，返回message，并设置对应 item 的 message。如果message存在，认为验证不通过。。
      * 回调函数的参数为所有验证结果
      */
     validate (callback) {
-      const nodes = this.getRelationNodes('../form-item/form-item')
       const { validators, model } = this.data
       let valid = true
 
@@ -114,13 +118,22 @@ Component({
         const value = model[prop]
         const fn = validators[prop]
         const message = fn(value)
-        const target = nodes.find(item => item.data.prop === prop)
-        target.setErrorMessage(message)
+        this.setTargetMessage(prop, message)
         if (message) {
           valid = false
         }
       })
       callback(valid)
+    },
+
+    /**
+     * 根据 prop 属性，获取对应的 form-item 组件
+     * 并设置 error message
+     */
+    setTargetMessage (prop, message) {
+      const nodes = this.getRelationNodes('../form-item/form-item')
+      const target = nodes.find(item => item.data.prop === prop)
+      target.setErrorMessage(message)
     },
   },
 
