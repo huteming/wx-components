@@ -2,6 +2,7 @@
   "usingComponents": {
     "app-header": "../../components/header/header",
     "app-content": "../../components/content/content",
-    "app-cell": "../../components/cell/cell"
+    "app-cell": "../../components/cell/cell",
+    "app-icon": "../../components/icon/icon"
   }
 }

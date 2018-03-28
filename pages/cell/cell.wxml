@@ -5,6 +5,12 @@
   <app-cell label="测试 数字0" value="{{ 0 }}" />
   <app-cell icon="user" label="测试value过长省略" value="测试，测试，测试，测试，测试，测试，测试，测试" is-link />
   <app-cell icon="user" label="测试异步value" value="{{ asyncValue }}" is-link />
+
+  <app-cell is-link>
+    <app-icon slot="icon" icon="user" style="margin-right: 8px;" />
+    <text slot="label">测试 slot</text>
+    <text>slot value</text>
+  </app-cell>
 </app-content>
 
 

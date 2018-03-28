@@ -21,18 +21,20 @@
     <view class="c-cell__label c-cell-nowrap">
       <text wx:if="{{ label }}">{{ label }}</text>
 
-      <block wx:else>
+      <view wx:else>
         <slot name="label" />
-      </block>
+      </view>
     </view>
   </view>
 
-  <!--  值  -->
   <view class="c-cell-flex c-cell__ft">
-    <text wx:if="{{ filter.notEmpry(value) }}" class="c-cell-nowrap {{ isLink ? 'c-cell__link' : '' }}">{{ value }}</text>
+    <!--  值  -->
+    <view class="c-cell__value c-cell-nowrap {{ isLink ? 'c-cell__link' : '' }}">
+      <text wx:if="{{ filter.notEmpry(value) }}">{{ value }}</text>
 
-    <view wx:else>
-      <slot />
+      <view wx:else>
+        <slot />
+      </view>
     </view>
   </view>
 </view>

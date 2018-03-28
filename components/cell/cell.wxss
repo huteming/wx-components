@@ -29,7 +29,6 @@
   width: 390rpx;
   justify-content: flex-end;
   text-align: right;
-  color: #999;
   box-sizing: border-box;
 }
 
@@ -39,6 +38,10 @@
 
 .c-cell__label {
   color: #000;
+}
+
+.c-cell__value {
+  color: #999;
 }
 
 .c-cell__link {
