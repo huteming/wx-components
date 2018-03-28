@@ -10,6 +10,10 @@
 
 
 <!--  文档  -->
+<view class="page__hd">
+  <view class="page__title">文档</view>
+</view>
+
 <app-header title="属性" />
 <app-content>
   <app-cell label="mode*date" value="选择类型, date, time" />

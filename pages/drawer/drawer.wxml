@@ -1,0 +1,22 @@
+<button style="margin-top: 20px;" bindtap="handleClick"> 打开 </button>
+
+
+
+<!--  文档  -->
+<app-drawer visible="{{ visible }}" placement="{{ placement }}" catch:open="handleOpen" catch:close="handleClose">
+  <view class="page__hd">
+    <view class="page__title">文档</view>
+  </view>
+
+  <app-header title="属性" />
+  <app-content>
+    <app-cell label="visible" value="是否可见" />
+    <app-cell label="placement*left" value="位置,[left, right]" />
+  </app-content>
+
+  <app-header title="事件" />
+  <app-content>
+    <app-cell label="open" value="''" />
+    <app-cell label="close" value="''" />
+  </app-content>
+</app-drawer>

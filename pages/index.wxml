@@ -35,5 +35,6 @@
     <app-cell label="picker 选择器" to="./picker/picker" is-link />
     <app-cell label="slider 滑动操作" to="./slider/slider" is-link />
     <app-cell label="message 消息提示" to="./message/message" is-link />
+    <app-cell label="drawer 弹出层" to="./drawer/drawer" is-link />
   </app-content>
 </view>

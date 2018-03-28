@@ -1,0 +1,50 @@
+.c-drawer {
+  visibility: hidden;
+  transition: all 0.4s ease;
+}
+
+.c-drawer-animate {
+  visibility: visible;
+}
+
+.c-drawer-mask {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  opacity: 0;
+  z-index: 10;
+  transition: all 0.4s ease;
+}
+
+.c-drawer-mask-animate {
+  opacity: 0.7;
+}
+
+.c-drawer-content {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 70%;
+  background-color: #f5f5f9;
+  overflow: auto;
+  z-index: 11;
+  opacity: 1;
+  transition: all 0.4s ease;
+}
+
+.c-drawer-content__left {
+  left: 0;
+  transform: translate(-100%, 0);
+}
+
+.c-drawer-content__right {
+  right: 0;
+  transform: translate(100%, 0);
+}
+
+.c-drawer-content-animate {
+  transform: translate(0, 0);
+}

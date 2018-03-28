@@ -1,0 +1,7 @@
+<view class="c-drawer {{ animationDrawer }}">
+  <view class="c-drawer-mask {{ animationMask }}" bindtap="handleClickPage"></view>
+
+  <view class="c-drawer-content c-drawer-content__{{ placement }} {{ animationContent }}" catchtap="handleClickContent">
+    <slot />
+  </view>
+</view>
