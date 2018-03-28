@@ -1,4 +1,5 @@
 <view class="page">
+
   <app-header title="基础组件" />
   <app-content>
     <!-- <app-cell label="动态布局" to="./async-layout/async-layout" is-link /> -->

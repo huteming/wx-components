@@ -1,0 +1,7 @@
+function notEmpry (value) {
+  return value || typeof value === 'number'
+}
+
+module.exports = {
+  notEmpry: notEmpry,
+}

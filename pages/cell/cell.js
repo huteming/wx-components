@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    asyncLabel: '测试value过长省略'
+    asyncValue: '初始value'
   },
 
   /**
@@ -14,7 +14,7 @@ Page({
   onLoad: function (options) {
     setTimeout(() => {
       this.setData({
-        asyncLabel: 'async label'
+        asyncValue: '异步value'
       })
     }, 2000)
   },

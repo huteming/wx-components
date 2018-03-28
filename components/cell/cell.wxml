@@ -1,43 +1,38 @@
-<!--
-  备注：
-  宽度详细：10 + icon + [8] + label + 10 + value + error[22] + [8] + isLink + 15
--->
+<wxs src="./cell.wxs" module="filter" />
+
 <view
   class="c-cell"
-  hover-class="{{ isLink && to ? 'c-cell_active' : '' }}"
+  hover-class="{{ isLink && to ? 'c-cell-active' : '' }}"
   bindtap="handleClick">
-  <!--  图标  -->
-  <view class="c-cell-item c-cell__hd" id="cell-header" style="{{ styleHeader }}">
-    <app-icon wx:if="{{ icon }}" icon="{{ icon }}" />
+  <view class="c-cell-flex c-cell__bd" style="{{ styleLabel }}">
 
-    <view wx:else>
-      <slot name="icon" />
+    <!--  图标  -->
+    <view class="c-cell__icon">
+      <view wx:if="{{ icon }}" style="margin-right: 8px;">
+        <app-icon icon="{{ icon }}" />
+      </view>
+
+      <view wx:else>
+        <slot name="icon" />
+      </view>
     </view>
-  </view>
 
-  <!--  标题  -->
-  <view class="c-cell-item c-cell__bd" id="cell-body" style="{{ styleBody }}">
-    <text wx:if="{{ label }}">{{ label }}</text>
+    <!--  标题  -->
+    <view class="c-cell__label c-cell-nowrap">
+      <text wx:if="{{ label }}">{{ label }}</text>
 
-    <block wx:else>
-      <slot name="label" />
-    </block>
+      <block wx:else>
+        <slot name="label" />
+      </block>
+    </view>
   </view>
 
   <!--  值  -->
-  <view class="c-cell-item c-cell__ft" id="cell-footer">
-    <text wx:if="{{ value }}" style="{{ styleValue }}">{{ value }}</text>
+  <view class="c-cell-flex c-cell__ft">
+    <text wx:if="{{ filter.notEmpry(value) }}" class="c-cell-nowrap {{ isLink ? 'c-cell__link' : '' }}">{{ value }}</text>
 
-    <view style="width: 100%;" wx:else>
+    <view wx:else>
       <slot />
     </view>
   </view>
-
-  <!--  标识  -->
-  <view class="c-cell-item c-cell__tip" wx:if="{{ error }}">
-    <icon type="warn" size="23" color="#E64340"></icon>
-  </view>
-
-  <!--  箭头  -->
-  <view class="c-cell__link {{ isLink ? 'c-cell__link-active' : '' }}" wx:if="{{ isLink }}"></view>
 </view>

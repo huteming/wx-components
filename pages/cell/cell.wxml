@@ -1,16 +1,10 @@
 <app-cell icon="user" label="默认" value="无底色" /> 
 
 <app-content>
-  <app-cell label="将组件嵌套到content中" value="有底色" /> 
-  <app-cell icon="user" label="{{ asyncLabel }}" value="测试，测试，测试，测试，测试，测试，测试，测试" is-link />
-
-  <app-cell icon="user" label="test input" label-width="170" error>
-    <app-input />
-  </app-cell> 
-
-  <app-cell icon="user" label="test textarea aa" label-width="170" error>
-    <app-textarea />
-  </app-cell> 
+  <app-cell label="将组件嵌套到content中12345" label-width="300" value="有底色" />
+  <app-cell label="测试 数字0" value="{{ 0 }}" />
+  <app-cell icon="user" label="测试value过长省略" value="测试，测试，测试，测试，测试，测试，测试，测试" is-link />
+  <app-cell icon="user" label="测试异步value" value="{{ asyncValue }}" is-link />
 </app-content>
 
 
@@ -24,7 +18,6 @@
   <app-cell label="value" value="值" />
   <app-cell label="to" value="链接" />
   <app-cell label="is-link" value="*false" />
-  <app-cell label="error" value="*false" />
 </app-content>
 
 <app-header title="slot" />

@@ -1,12 +1,3 @@
-.c-cell {
-  padding: 0 10px 0 15px;
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
-  min-height: 45px;
-}
-
 .c-cell::before {
   content: " ";
   position: absolute;
@@ -15,45 +6,48 @@
   right: 0;
   height: 1px;
   border-top: 1rpx solid #d9d9d9;
-  color: #d9d9d9;  
+  color: #d9d9d9;
 }
 
-.c-cell-item {
+.c-cell {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
-  align-items: center;
-}
-
-.c-cell__hd {
-  justify-content: center;
-  min-width: 0;
+  box-sizing: border-box;
+  min-height: 45px;
 }
 
 .c-cell__bd {
-  margin-right: 10px;
-  min-width: 95px;
-  color: #000;
+  padding-left: 15px;
+  width: 360rpx;
+  box-sizing: border-box;
 }
 
 .c-cell__ft {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  flex: 1;
-  color: #999;
+  padding-right: 15px;
+  width: 390rpx;
+  justify-content: flex-end;
   text-align: right;
+  color: #999;
+  box-sizing: border-box;
 }
 
-.c-cell__tip {
-  margin-left: 8px;
+.c-cell__icon {
+  min-width: 0;
+}
+
+.c-cell__label {
+  color: #000;
 }
 
 .c-cell__link {
   position: relative;
-  width: 13px;
+  padding-right: 13px;
+  box-sizing: border-box;
 }
 
-.c-cell__link-active::after {
+.c-cell__link::after {
   content: " ";
   display: inline-block;
   height: 6px;
@@ -70,13 +64,19 @@
   right: 2px;
 }
 
-.c-cell_active {
+.c-cell-active {
   background-color: #ececec;
 }
 
-.c-cell__ft_nowrap {
-  /* max-width: 500rpx; */
+.c-cell-nowrap {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.c-cell-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
 }

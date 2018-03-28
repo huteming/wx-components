@@ -2,8 +2,6 @@
   "usingComponents": {
     "app-header": "../../components/header/header",
     "app-content": "../../components/content/content",
-    "app-cell": "../../components/cell/cell",
-    "app-input": "../../components/input/input",
-    "app-textarea": "../../components/textarea/textarea"
+    "app-cell": "../../components/cell/cell"
   }
 }
