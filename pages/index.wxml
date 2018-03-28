@@ -8,7 +8,7 @@
     <app-cell label="panel 面板" to="./panel/panel" is-link />
     <app-cell label="cell 单元格" to="./cell/cell" is-link />
     <app-cell label="icon 图标" to="./icon/icon" is-link />
-    <app-cell label="lyaout 布局" to="./layout/layout" is-link />
+    <app-cell label="layout 布局" to="./layout/layout" is-link />
     <app-cell label="header 头部" to="./header/header" is-link />
     <app-cell label="footer 底部" to="./footer/footer" is-link />
     <app-cell label="chart 图表" to="./chart/chart" is-link />
@@ -34,5 +34,6 @@
     <app-cell label="datepicker 日期事件选择器" to="./datepicker/datepicker" is-link />
     <app-cell label="picker 选择器" to="./picker/picker" is-link />
     <app-cell label="slider 滑动操作" to="./slider/slider" is-link />
+    <app-cell label="message 消息提示" to="./message/message" is-link />
   </app-content>
 </view>

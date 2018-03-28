@@ -1,0 +1,7 @@
+<view
+  class="c-message c-message-{{ type }} {{ center ? 'c-message-center' : '' }}"
+  id="message"
+  animation="{{ animation }}"
+  style="top: -{{ height }}px;">
+  <text class="c-message-content__{{ type }}">{{ message }}</text>
+</view>

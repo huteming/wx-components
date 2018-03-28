@@ -1,0 +1,46 @@
+.c-message {
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding: 10px 25px;
+}
+
+.c-message-center {
+  text-align: center;
+}
+
+/*  info  */
+.c-message-info {
+  background-color: #edf2fc;
+}
+
+.c-message-content__info {
+  color: #909399;
+}
+
+/*  success  */
+.c-message-success {
+  background-color: #f0f9eb;
+}
+
+.c-message-success {
+  color: #67c23a;
+}
+
+/*  warning  */
+.c-message-warning {
+  background-color: #fdf6ec;
+}
+
+.c-message-warning {
+  color: #e6a23c;
+}
+
+/*  error  */
+.c-message-error {
+  background-color: #fef0f0;
+}
+
+.c-message-error {
+  color: #f56c6c;
+}

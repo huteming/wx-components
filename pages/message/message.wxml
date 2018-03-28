@@ -1,0 +1,26 @@
+<app-message
+  catch:open="handleOpen"
+  catch:close="handleClose"
+  visible="{{ visible }}"
+  message="message"
+  type="{{ types[index] }}"
+  center />
+
+<button bindtap="handleClick" style="margin-top: 100px;"> 打开 </button>
+
+
+<!--  文档  -->
+<app-header title="属性" />
+<app-content>
+  <app-cell label="visible" value="是否显示" />
+  <app-cell label="message" value="显示文字" />
+  <app-cell label="type" value="主题, [info,success,warning,error]" />
+  <app-cell label="center" value="文字是否居中" />
+  <app-cell label="duration*2000" value="显示时间, 毫秒" />
+</app-content>
+
+<app-header title="事件" />
+<app-content>
+  <app-cell label="open" value="''" />
+  <app-cell label="close" value="''" />
+</app-content>

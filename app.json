@@ -24,7 +24,8 @@
     "pages/async-layout/async-layout",
     "pages/layout/layout",
     "pages/select/select",
-    "pages/tooltip/tooltip"
+    "pages/tooltip/tooltip",
+    "pages/message/message"
   ],
   "window": {
     "backgroundTextStyle": "light",
